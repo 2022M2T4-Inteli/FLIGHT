@@ -9,7 +9,7 @@
 
 ## F.L.I.G.H.T.
 
-## Integrantes: <a href="https://www.linkedin.com/in/DayllanSouza/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/dayllan-souza-0a0592124/">Dayllan Alho</a>, <a href="https://www.linkedin.com/in/victorbarq/">.........</a>, <a href="https://www.linkedin.com/in/victorbarq/">.........</a>, <a href="https://www.linkedin.com/in/victorbarq/">..........</a>, <a href="https://www.linkedin.com/in/victorbarq/">.........</a
 
 ## Descrição
 
