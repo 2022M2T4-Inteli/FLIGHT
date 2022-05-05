@@ -9,7 +9,7 @@
 
 ## F.L.I.G.H.T.
 
-## Integrantes: <a href="https://www.linkedin.com/in/dayllan-souza-0a0592124/">Dayllan Alho</a>, <a href="https://www.linkedin.com/in/victorbarq/">.........</a>, <a href="https://www.linkedin.com/in/victorbarq/">.........</a>, <a href="https://www.linkedin.com/in/victorbarq/">..........</a>, <a href="https://www.linkedin.com/in/victorbarq/">.........</a
+## Integrantes: <a href="https://www.linkedin.com/in/dayllan-souza-0a0592124/">Dayllan Alho</a>, <a href="https://www.linkedin.com/in/luca-giberti-63a4ab231/"> Luca Giberti</a>, <a href="https://www.linkedin.com/in/victorbarq/">.........</a>, <a href="https://www.linkedin.com/in/victorbarq/">..........</a>, <a href="https://www.linkedin.com/in/victorbarq/">.........</a
 
 ## Descrição
 
