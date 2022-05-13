@@ -1,0 +1,68 @@
+.background {
+            height:926px;
+            width:428px;
+            background-color: white;
+}
+
+.topBar{
+    display:flex;
+    height:10% ; 
+    background-color: #3468fA;
+}
+
+.hurb_logo{
+           width:35%;
+           margin-left:65%
+}
+
+.turn{
+    height:20px;
+    width:10px;
+    background-color:#3468fA;
+    border-color:#3468fA;
+
+}
+
+
+
+
+.dBox1{
+    background-color:white;
+    border:1;
+    border-radius:25px;
+    height:80px;
+    width:80px;
+    border-color:#3468FC;
+    color:#3468FC;
+    font-size:130%;
+    margin-left:45px;
+    margin-top:30px; 
+    align-self:center;
+}
+
+
+
+.centralText{
+    border:1;
+    border-color:#3468fc;
+    border-radius:50px;
+    height:40px;
+    width:428px;
+    margin-top:20px
+}
+
+.bottonText{
+    border:1;
+    border-color:#3468fc;
+    border-radius:50px;
+    height:600px;
+    width:428px;
+    margin-top:20px;
+}
+
+.left-arrow {
+    width: 60x;
+    height: 60px;
+    margin-top:15px;
+    margin-left:10px;
+}

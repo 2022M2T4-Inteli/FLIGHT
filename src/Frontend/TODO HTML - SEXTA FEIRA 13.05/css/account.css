@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+:root {
+    --blue: #3468FC;
+    --white: #E8F1F2;
+    --gray: #C4C4C4;
+}
+
+body {
+    font-family: Ubuntu, sans-serif;
+    background-color: var(--white);
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo, .menu {
+    width: 100%;
+}
+
+#logo, nav {
+    width: 50px;
+}
+
+.bg-blue {
+    background-color: var(--blue);
+    color: white;
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.radius {
+    padding: 7px;
+    width: 275px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.eye_value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value {
+    width: 200px;
+    border-radius: 80px;
+    border: 4px solid #3468FC;
+    text-align: center;
+}
+
+.bottom {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    transition: .2s;
+    padding: 20px !important;
+    font-size: larger;
+    border-radius: 80px !important;
+}
+
+button.bg-blue:hover {
+    cursor: pointer;
+    background-color: #0041CC;
+}
+
+button.bg-gray:hover {
+    cursor: pointer;
+    background-color: #9D9D9D;
+    
+}
+
+#eye:hover, .menu {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        justify-content: space-between;
+    }
+}

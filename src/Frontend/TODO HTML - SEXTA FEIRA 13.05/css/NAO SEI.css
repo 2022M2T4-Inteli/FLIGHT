@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+:root {
+    --blue: #3468FC;
+    --white: #E8F1F2;
+    --gray: #C4C4C4;
+}
+
+header {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+body {
+    font-family: Ubuntu, sans-serif;
+    background-color: var(--white);
+    margin: 0;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 100%;
+}
+
+#logo {
+    width: 50px;
+}
+
+.radius {
+    padding: 7px;
+    width: 275px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+#type-box {
+    display: flex;
+    max-width: 250px;
+}
+
+.img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.img>img {
+    width: 100%;
+}

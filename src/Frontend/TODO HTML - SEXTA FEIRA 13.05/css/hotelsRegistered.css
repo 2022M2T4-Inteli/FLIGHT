@@ -1,0 +1,94 @@
+body {
+    font-family:'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #3468FC;
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.hurb_logo {
+    width: 160px;
+    height: 95px;
+}
+
+.left_arrow{
+    width:65px;
+    height:65px;
+    margin-top:13px;
+    margin-left:15px  
+}
+
+h1{
+    width: 30%;
+    height:30%;
+    color:white;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 1000;
+    margin-right:900px;
+    margin-top:25px;
+}
+
+.searchBar{
+    margin-top:20px;
+    justify-content:space-between;
+    
+}
+.search{
+    background-color:#D8D8D8;
+    width: 500px;
+    height: 35px;
+    border-radius:40px;
+    border:0px;
+    justify-content:space-between;
+    text-align:center;
+    position: relative;
+
+}
+.filter{
+    background-color:#D8D8D8;
+    width: 300px;
+    height: 35px;
+    border-radius:40px;
+    border:0px;
+    position:relative;
+}
+.icon_search{
+    width:33px;
+    height: 33px;;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.search_letter{
+    margin-right: 300px;
+}
+
+.icon_filter{
+    width:33px;
+    height:33px;
+    position:absolute;
+    right:15px;
+    top:0;
+}
+
+.filter_letter{
+    margin-right:150px;
+}
+.image_collum{
+    display:flex;
+    flex-direction: column;
+}
+
+.image_row{
+    display:flex;
+    flex-direction:row;
+    margin-top:30px;
+    justify-content: space-between;
+}
