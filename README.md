@@ -15,12 +15,11 @@
 
 📜 Descrição da solução prosposta
 <br><br>
-O problema a ser resolvido dentro do Hurb em parceria com o time Inteli e a equipe F.L.I.G.H.T. é a exploração da receita de antecipação a fornecedores.
-
+O problema a ser resolvido dentro do Hurb em parceria com o time Inteli e a equipe F.L.I.G.H.T. é a exploração da receita de antecipação a fornecedores.<br>
 Para hotéis que se enquadram na regra de negócios padrão (pagamento no D+30 pós check out do guest), há a oferta de modelos de antecipação do pagamento em D2, D7 e D15:<br>
-&emsp;&emsp;&emsp;Na antecipação D2, o desconte é de 12% do total devido ao fornecedor;
-&emsp;&emsp;&emsp;Na antecipação D7, o desconte é de 9% do total devido ao fornecedor;
-&emsp;&emsp;&emsp;Na antecipação D15, o desconte é de 6% do total devido ao fornecedor.
+&emsp;&emsp;&emsp;Na antecipação D2, o desconte é de 12% do total devido ao fornecedor;<br>
+&emsp;&emsp;&emsp;Na antecipação D7, o desconte é de 9% do total devido ao fornecedor;<br>
+&emsp;&emsp;&emsp;Na antecipação D15, o desconte é de 6% do total devido ao fornecedor.<br>
 Nossa solução é a criação de uma plataforma mobile para os hoteleiros parceiros do Hurb para facilitação do pedido de antecipação após o faturamento do check-out.
 <br><br>
 <p align="center">
