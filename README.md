@@ -36,13 +36,10 @@ Nossa solução é a criação de uma plataforma mobile para os hoteleiros parce
         <p>Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
           &emsp;|-->antigos<br>
           &emsp;WAD - Documento Aplicação Web.pdf<br>
-💻executáveis<br>
-  &emsp;📁|-->windows<br>
-  &emsp;📁|-->android<br>
-  &emsp;📁|-->HTML<br>
 📷imagens<br>
 💾src<br>
-&emsp;📎 FirstClass<br>
+  &emsp;📁|-->BACK-END<br>
+  &emsp;📁|-->FRON-END<br>
 📄readme.md<br>
 📜licença.txt <br>
 
