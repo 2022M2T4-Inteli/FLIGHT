@@ -9,6 +9,8 @@ const hostname = '127.0.0.1';
 const DBPATH = 'dbHURB.db';
 app.use(express.json())
 
+
+// Adicionar um parceiro com seu nome e montante total(que vai ser calculado automaticamente e não manualmente, e atualizado em tempo real)
 app.post('/createpartner', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
@@ -23,23 +25,6 @@ app.post('/createpartner', urlencodedParser, (req, res) => {
 	res.end();
 });
 
-app.get('/users', (req, res) => {
-    database.get("SELECT * FROM PARCEIRO", (err, rows) => {
-        res.json(rows)
-    })
-})
-app.get('/hoteis', (req, res) => {
-    res.send("Hotéis")
-})
-app.get('/usuario', (req, res) => {
-    res.send("Usuários")
-})
-app.listen(3000, () => {
-    console.log('Servidor está ok.')
-})
-//toda vez que vc pesquisa na url, vc esta fazendo uma requisição
-// req= servidor recebendo
-// res= servidor respondendo
 
 app.get('/users', (req, res) => {
 	res.statusCode = 200;
