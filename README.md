@@ -110,18 +110,19 @@ Coloque código do prompt de comnando se for necessário
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 0.0.1 - 22/04/2022
+    * MUDANÇA: Adição de Template;<br>
+* 0.0.2 - 03/05/2022
+    * MUDANÇA: Criação e desenvolvimento do WAD<br>
+* 0.2.1 - 05/01/2022
+    * Exclusão do modelo GDD e atualização do WAD<br>
+* 0.2.1 - 05/01/2022
+    * Atualização do Readme.md
+* 0.3.0 - 15/05/2022
+    * Organização das pastas de Imagens e SRC.
+    * Atualização da documentação
+* 0.4.0 - 29/05/2022
+    * UPgrade README.md
 
 ## 📋 Licença/License
 
