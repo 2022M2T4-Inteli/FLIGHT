@@ -9,7 +9,7 @@
 
 ## F.L.I.G.H.T.
 
-## Integrantes: <a href="https://www.linkedin.com/in/dayllan-souza-0a0592124/">Dayllan Alho</a>, <a href="https://www.linkedin.com/in/luca-giberti-63a4ab231/"> Luca Giberti</a>, <a href="https://www.linkedin.com/in/jonas-viana-sales-a637ab237/">Jonas Salles</a>, <a href="barq/">Jordan Andrade</a>, <a href="https://www.linkedin.com/in/jordan-andrade-352541240/">.........</a>
+## Integrantes: <a href="https://www.linkedin.com/in/dayllan-souza-0a0592124/">Dayllan Alho</a>, <a href="https://www.linkedin.com/in/luca-giberti-63a4ab231/"> Luca Giberti</a>, <a href="https://www.linkedin.com/in/jonas-viana-sales-a637ab237/">Jonas Salles</a>, <a href="https://www.linkedin.com/in/jordan-andrade-352541240/">Jordan Andrade</a>, <a href="q/">.........</a>
 
 ## Descrição
 
