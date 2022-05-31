@@ -9,18 +9,17 @@
 
 ## F.L.I.G.H.T.
 
-## Integrantes: <a href="https://www.linkedin.com/in/dayllan-souza-0a0592124/">Dayllan Alho</a>, <a href="https://www.linkedin.com/in/luca-giberti-63a4ab231/"> Luca Giberti</a>, <a href="https://www.linkedin.com/in/jonas-viana-sales-a637ab237/">Jonas Salles</a>, <a href="barq/">..........</a>, <a href="q/">.........</a>
+## Integrantes: <a href="https://www.linkedin.com/in/dayllan-souza-0a0592124/">Dayllan Alho</a>, <a href="https://www.linkedin.com/in/luca-giberti-63a4ab231/"> Luca Giberti</a>, <a href="https://www.linkedin.com/in/jonas-viana-sales-a637ab237/">Jonas Salles</a>, <a href="https://www.linkedin.com/in/jordan-andrade-352541240/">Jordan Andrade</a>, <a href="https://www.linkedin.com/in/moises-caze">Moisés Cazé</a>
 
 ## Descrição
 
 📜 Descrição da solução prosposta
 <br><br>
-O problema a ser resolvido dentro do Hurb em parceria com o time Inteli e a equipe F.L.I.G.H.T. é a exploração da receita de antecipação a fornecedores.
-
+O problema a ser resolvido dentro do Hurb em parceria com o time Inteli e a equipe F.L.I.G.H.T. é a exploração da receita de antecipação a fornecedores.<br>
 Para hotéis que se enquadram na regra de negócios padrão (pagamento no D+30 pós check out do guest), há a oferta de modelos de antecipação do pagamento em D2, D7 e D15:<br>
-&emsp;&emsp;&emsp;Na antecipação D2, o desconte é de 12% do total devido ao fornecedor;
-&emsp;&emsp;&emsp;Na antecipação D7, o desconte é de 9% do total devido ao fornecedor;
-&emsp;&emsp;&emsp;Na antecipação D15, o desconte é de 6% do total devido ao fornecedor.
+&emsp;&emsp;&emsp;Na antecipação D2, o desconte é de 12% do total devido ao fornecedor;<br>
+&emsp;&emsp;&emsp;Na antecipação D7, o desconte é de 9% do total devido ao fornecedor;<br>
+&emsp;&emsp;&emsp;Na antecipação D15, o desconte é de 6% do total devido ao fornecedor.<br>
 Nossa solução é a criação de uma plataforma mobile para os hoteleiros parceiros do Hurb para facilitação do pedido de antecipação após o faturamento do check-out.
 <br><br>
 <p align="center">
@@ -37,13 +36,10 @@ Nossa solução é a criação de uma plataforma mobile para os hoteleiros parce
         <p>Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
           &emsp;|-->antigos<br>
           &emsp;WAD - Documento Aplicação Web.pdf<br>
-💻executáveis<br>
-  &emsp;📁|-->windows<br>
-  &emsp;📁|-->android<br>
-  &emsp;📁|-->HTML<br>
 📷imagens<br>
 💾src<br>
-&emsp;📎 FirstClass<br>
+  &emsp;📁|-->BACK-END<br>
+  &emsp;📁|-->FRON-END<br>
 📄readme.md<br>
 📜licença.txt <br>
 
@@ -114,18 +110,19 @@ Coloque código do prompt de comnando se for necessário
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 0.0.1 - 22/04/2022
+    * MUDANÇA: Adição de Template;<br>
+* 0.0.2 - 03/05/2022
+    * MUDANÇA: Criação e desenvolvimento do WAD<br>
+* 0.2.1 - 05/01/2022
+    * Exclusão do modelo GDD e atualização do WAD<br>
+* 0.2.1 - 05/01/2022
+    * Atualização do Readme.md
+* 0.3.0 - 15/05/2022
+    * Organização das pastas de Imagens e SRC.
+    * Atualização da documentação
+* 0.4.0 - 29/05/2022
+    * UPgrade README.md
 
 ## 📋 Licença/License
 
