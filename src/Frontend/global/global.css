@@ -1,6 +1,7 @@
 .topBar {
     display: flex;
     height: 80px;
+    background-color: #3468fa;
 }
 .leftSide {
     align-items: center;
