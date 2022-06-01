@@ -9,24 +9,29 @@
 </head>
 <body>
     <div class="background">
-        <div class="topBar">
-            <div class="flecha"> 
-                <img class="arrow" src="../HTML/flecha_borda_grossa_centro.png" onclick="changePage()">
+       <header>
+        <div class = "topBar">
+            <div class = "leftSide">
+                <img class="left-arrow" src="../HTML/flecha_borda_grossa_centro.png" onclick="history.back()">
+            </div>
+            <div class="rightSide">
+                <img class = "logo" src = "Logo.Hurb.png">
             </div>
         </div>
-        
-        <div class="Logo">
-            <img class="photohub" src="Captura de Tela 2022-05-18 às 13.20.44.pnG" alt="a">
-        </div> 
-        
-        <div class="hotelGroup">
-            <button class="hotels" onclick="changePage1()">Home</button>
-            <button class="hotels" onclick="changePage2()">Meus Hoteis</button>
-            <button class="hotels1" onclick="changePage3()">Agendar Antecipação Automática</button>
-            <button class="hotels" onclick="changePage4()">Sobre Antecipação</button>
-            <button class="hotels" id="Red-Button" onclick="changePage5()">Sair</button>
+    </header>
+        <div class = "content">
+            <div class="Logo">
+                <img class="photohub" src="logo HURB branco.png" alt="a">
+            </div> 
+            <div class="hotelGroup">
+                    <button class="hotels" onclick="changePage1()">Home</button>
+                    <button class="hotels" onclick="changePage2()">Meus Hoteis</button>
+                    <button class="hotels" onclick="changePage3()">Agendar Antecipação Automática</button>
+                    <button class="hotels" onclick="changePage4()">Sobre Antecipação</button>
+                    <button class="hotels" id="Red-Button" onclick="changePage5()">Sair</button>
+            </div>
         </div>
-        <script src="../JS/tela_de_cadastro.js"></script>
     </div>
+    <script src="../JS/tela_de_cadastro.js"></script>
 </body>
 </html>
