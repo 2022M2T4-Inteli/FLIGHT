@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="../JS/Agendamento-de-antecipacao.js"></script>
+        <link rel="stylesheet" href="../CSS/Agendamento de Antecipação.css">
+    </head>
+    <header>
+        <!--definir a barra de cima  da tela-->
+        <div class="background">
+            <div class="cabeçalho">
+                <img class="left-arrow" src="../HTML/flecha_borda_grossa_centro.png" onclick="history.back()">
+            </div>
+            
+        </div>
+    </header>
+    <body>
+        <div class="Agendamento-automático">
+            Agende suas antecipações
+        </div>
+
+    <form action="../Agendamento finalizado/Agendamento FInalizado.html" method="GET">
+        <div class="box1">
+            <box>
+                <img class="calendar" src="../HTML/calendar.png">
+            </box>
+            <input class="input_1_data" placeholder="Escreva a data que gostaria de receber. Ex: xx/xx/xxxx" required>
+            </input>
+        </div>
+
+        <div class="box2">
+            <box>
+                <img class="pay" src="../HTML/pay.png">
+            </box>
+            <input class="input_2_reais" placeholder="Escreva o valor a receber. Ex: 2.000,00" required>
+            </input>
+        </div>
+        
+        <div row="formas_alinhadas">
+
+            <div class="texto_de_pagamento">
+                <p>Selecione a forma de pagamento</p>
+            </div>
+            <div>
+                <input type="radio" id="boleto" name="age" value="boleto">
+                    <label class="bol" for="boleto">
+                        Boleto
+                    </label>
+                </input>
+
+                <input type="radio" id="pix" name="age" value="pix">
+                    <label class="pix" for="pix">
+                        Pix
+                    </label>
+                </input>
+
+                <input type="radio" id="transferência" name="age" value="Transferência">
+                    <label class="transferência" for="transferência">
+                        Transferência
+                    </label>
+                </input>
+
+                <div class="finalizar">
+                    <button type="submit" onclick="changePage1()">
+                        Finalizar Agendamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background-color:#3468fc;
+}
+
+.cabeçalho{
+    margin-bottom: 4%;
+}
+
+.left-arrow{
+    width: 70px;
+}
+
+.Agendamento-automático{
+    color: black;
+    font-size: 64px;
+    font-weight: bold;
+    text-align:center;
+}
+
+.box1{
+    align-items: center;
+    text-align: center;
+    background-color:white;
+    border-radius:20px;
+    border-color: #3468fc;
+    color:#3468fc;
+    display:flex;
+    font-size: 15px;
+    margin-top:7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.input_1_data{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #3468fc;
+    color:black;
+    border-color: #3468fc;
+    font-size: 30px;
+    width: 1000px;
+    height: 60px;
+    margin-left: 4%;
+}
+
+.calendar{
+    width: 140px;
+    height: 140px;
+}
+
+.box2{
+    align-items: center;
+    text-align: center;
+    background-color:white;
+    border-radius:20px;
+    border-color: #3468fc;
+    color:#3468fc;
+    display:flex;
+    font-size: 15px;
+    margin-top:7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+}
+
+.input_2_reais{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #3468fc;
+    color:black;
+    border-color: #3468fc;
+    font-size: 30px;
+    width: 1000px;
+    height: 60px;
+    margin-left: 4%;
+}
+
+.pay{
+    width: 140px;
+    height: 140px;
+
+}
+
+.texto_de_pagamento{
+    font-size: 28px;
+    text-align: center;
+    margin-left: 15%;
+    color:black;
+    margin-bottom: 2%;
+}
+
+button{
+    color:white;
+    font-weight: bold;
+    border: solid #3468fc;
+    background-color: #8CAAFD;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    font-size: large;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+label{
+    color: #3468fc;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 768px){
+    /*For mobile phones */
+    .Agendamento-automático{
+        color: black;
+        margin-top: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align:center;
+        margin-bottom: 20%;
+    }
+
+    .calendar{
+        width: 60px;
+        height: 60px;
+    }
+
+    .box1{
+        align-items: center;
+        text-align: center;
+        background-color:white;
+        border-radius:20px;
+        border-color: #3468fc;
+        color:#3468fc;
+        width: 70%;
+        margin-top:13%;
+        margin-left: 2%;
+        margin-bottom: 4%;
+    }
+
+    .input_1_data{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #3468fc;
+    border-color: #3468fc;
+    font-size: 23px;
+    }
+
+    .box2{
+        align-items: center;
+        text-align: center;
+        background-color:white;
+        border-radius:20px;
+        border-color: #3468fc;
+        color:#3468fc;
+        width: 70%;
+        margin-top:13%;
+        margin-left: 2%;
+        margin-bottom: 4%;
+    }
+    
+    .input_2_reais{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #3468fc;
+    border-color: #3468fc;
+    font-size: 23px;
+}
+    .pay{
+        width: 70px;
+        height: 70px;
+    }
+
+    .texto_de_pagamento{
+        font-size: 28px;
+        text-align: center;
+        margin-left: 15%;
+        color:black;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+    
+    label{
+        color: #3468fc;
+        font-weight: bold;
+        display:flex;
+        font-size: 30px;
+    }
+    
+    button{
+        color:white;
+        font-weight: bold;
+        border: solid #3468fc;
+        background-color: #8CAAFD;
+        border-radius: 20px;
+        width: 180px;
+        height: 50px;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        margin-left: 50%;
+        font-size: 20px;
+
+    }
+    
+}

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Demonstrativo </title>
+        <link rel="stylesheet" href="../CSS/Solicitação-Demonstrativo.css">
+        <link rel = "stylesheet" href = "../../../global/global.css">
+    </head>
+    <header>
+        <div class = "topBar">
+            <div class = "leftSide">
+                <img class="left-arrow" src="../HTML/flecha_borda_grossa_centro.png" onclick="history.back()">
+            </div>
+            <div class="rightSide">
+                <img class = "logo" src = "Logo.Hurb.png">
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <div class="Demonstrativo">
+            <hr>Demonstrativo<hr>
+        </div>
+            <div class="row">
+                <div class="col">
+                    <div class="data_de_faturamento">
+                        Data de faturamento
+                    </div>
+
+                    <div class="calendar_de_faturamento">
+                        xx/xx/xxxx
+                    </div>
+                </div>
+
+                <div class="col">  
+                    <div class="Sistema_escolhido">
+                        Sistema escolhido
+                    </div>
+                    <div class="Ds">
+                        D+ (xx/xx/xxxx)
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="data_da_hospedagem">
+                        Data da hospedagem
+                    </div>
+                    <div class="calendar_de_hospedagem">
+                        xx/xx/xxxx
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="valor_requerido">
+                        Valor requerido em R$
+                    </div>
+                    <div class="valor_em_reais_requerido_">
+                        R$ 00,00
+                    </div>
+                </div>
+                    <div class="col">
+                    <div class="valor_a_receber">
+                        Valor a receber R$
+                    </div>
+                    <div class="valor_em_reais_descontado_">
+                        R$ 00,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="importante-segurança">
+                Importante
+            </div>
+            <div class="mensagem">
+                Não é possível cancelar esta operação após a confirmação do pagamento!
+            </div>
+        </div>
+
+        <button class="confirmar" onclick="changePage()">
+            confirmar
+        </button>
+
+        <script src="../JS/solicitacao-demonstrativo.js"></script>
+    </body>
+</html>

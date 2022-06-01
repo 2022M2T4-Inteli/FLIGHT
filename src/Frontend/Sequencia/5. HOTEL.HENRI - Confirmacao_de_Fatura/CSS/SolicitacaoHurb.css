@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background-color:#3468fc;
+}
+.cabeçalho{
+    width: 100%;
+}
+.left-arrow{
+    width: 70px;
+}
+
+.escrita{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 72px;
+    font-family: Monstserrat;
+}
+
+hr{
+    background-color: #8CAAFD;
+    height: 3px;
+    color: #3468fc;
+    border: #0000;
+}
+
+.valor_a_receber{
+    font-size: 30px;
+    margin-top: 8%;
+}
+
+.input_1_data{
+    border-radius: 20px;
+    border: 1px solid #3468FC;
+    color:black;
+    border-color: #3468FC;
+    font-size: 40px;
+    width: 700px;
+    height: 80px;
+    text-align: center;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+::placeholder{
+    color: black;
+}
+
+button{
+    border-radius: 50px;
+    border: 2px solid #0000;
+    color:black;
+    border-color: #3468fc;
+    font-size: 15px;
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    align-items: flex-end;
+}
+
+.quadrado{
+    text-align: center;
+    margin-top: 3%;
+    border: 1px solid #3468fc;
+    margin-left: 2%;
+    font-size: 25px;    
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao{
+    align-items: left;
+    width: 200px;
+    font-size: 30px;
+    margin-right: 500px;
+    background-color: #8CAAFD;
+}
+.cancelar{
+    border-radius: 25px;
+    border: 5px solid #0000;
+    color:black;
+    border-color:#0000;
+    font-size: 55px;
+    width: 800px;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 888px) {
+    /* For mobile phones: */
+    .escrita{
+        font-size: 30px;
+    }
+
+    .valor_a_receber{
+        font-size: 30px;
+        margin-top: 2%;
+    }
+    
+    .input_1_data{
+        border-radius: 20px;
+        width: 90%;
+        border: 1px solid #3468FC;
+        color:black;
+    }
+
+    ::placeholder{
+        color: #3468fc;
+    }
+
+    button{
+        border-radius: 50px;
+        border: 2px solid #0000;
+        color:black;
+        border-color: #3468fc;
+        font-size: 15px;
+        width: 100px;
+        height: 70px;
+        background-color: white;
+    }
+
+    .quadrado{
+        background-color: #eaeaea;
+        border-radius: 20px;
+        align-items:baseline;
+        width: 90%;
+        margin-top: 6%;
+        border: 1px solid #3468fc;
+    }
+
+    .texto_de_pagamento{
+        color:black;
+        font-size: 20px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+        
+    .all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao{
+        height: 40px;
+        font-size: 25px;
+        background-color: #8CAAFD;
+        margin-right: 30%;
+    }
+
+    .cancelar{
+        border-radius: 25px;
+        border: 5px solid #0000;
+        color:black;
+        width: 80%;
+        font-size: 25px;
+        margin-top: 15%;
+        margin-left: 1%;
+        margin-right: 2%;
+    }
+        
+}

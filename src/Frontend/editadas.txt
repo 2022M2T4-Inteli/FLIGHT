@@ -1,9 +1,0 @@
-account.html - done
-admin.html - done
-anticipation.html
-hotelsRegistered.html - 
-login.html - done
-password.html 
-schedule.html - done
-settings.html - 
-tela do henri - no meu slack

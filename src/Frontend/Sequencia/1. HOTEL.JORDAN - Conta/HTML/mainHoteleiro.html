@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/mainHoteleiro.css">
+    <script src="../JS/mainHoteleiro.js"></script>
+    <title>tela principal</title>
+</head>
+<body>
+    <div class="topBar">
+        <div class="flecha"> 
+            <img class="arrow" src="../HTML/menu.png" onclick="changePage()">
+            <img class = "logo" src = "../HTML/hub_logo.png">
+        </div>
+    </div>
+    <div class="background">
+        <label class="valueLetter">Valor acumulado</label>
+        <div class="box">
+            <img id="teste" class="eye" src="../HTML/olho_aberto2.png" inputmode="olho" onclick="openEye()")>
+            <button id="teste2" class="value">
+                R$ 3000
+            </button>
+        </div>
+        </div>
+        <button class="midButton1"  onclick="antecipe_seus_ganhos()">
+            Antecipe seus ganhos
+        </button>
+        <button class="midButton2"  onclick="antecipacao_automatica()">
+            Antecipação automática
+        </button>
+        </div>
+        <div class="background3">
+            <button class="footerButton">
+                <img src="../HTML/extrato.png" class="iconButton"  onclick="extrato()">
+            </button>
+            <button class="footerButton">
+                <img src="../HTML/configurações2.png" class="iconButton"  onclick="configuracoes()">
+            </button>
+            <button class="footerButton">
+                <img src="../HTML/saiba_mais.png" class="iconButton"  onclick="saiba_mais()">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

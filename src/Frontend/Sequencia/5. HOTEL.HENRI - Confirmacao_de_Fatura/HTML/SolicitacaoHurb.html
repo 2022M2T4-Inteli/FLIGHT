@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/SolicitacaoHurb.css">
+    </head>
+    <header>
+        <!--definir a barra de cima  da tela-->
+        <div class="background">
+                <div class="cabeçalho">
+                        <div class="left-side">
+                            <img class="left-arrow" src="../HTML/flecha_borda_grossa_centro.png" onclick="history.back()">
+                        </div>
+                        <div class="right-side">
+                            
+                        </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="escrita" >
+            <hr> 
+            Confirmação de Fatura
+            <hr> 
+        </div>
+        
+    <div class="all">
+        <div class="valor_a_receber">
+            Valor a receber:
+        </div>
+        <input class="input_1_data" placeholder=" ''Digite o valor'' " type="number">
+    </input>
+    <div class="quadrado">
+        <div class="texto_de_pagamento">
+            <p>Receba dentro de :</p>
+                <input type="radio" id="boleto" name="age" value="boleto">
+                    <label class="bol30" for="boleto">
+                        30 Dias (xx/xx/xx) - sem abatimento, no valor de R$(valor total)
+                    </label>
+                    <div class="texto_de_pagamento">
+                            <input type="radio" id="boleto" name="age" value="boleto">
+                                <label class="bol15" for="boleto">
+                                    15 dias (xx/xx/xx) - descontado 6%, no valor de R$(valor -6,0%)
+                                </label>
+                                <div class="texto_de_pagamento">
+                                        <input type="radio" id="boleto" name="age" value="boleto">
+                                            <label class="bol7" for="boleto">
+                                                7 dias (xx/xx/xx) - descontado 9%, no valor de R$ (valor - 9,0%)
+                                            </label>
+                                            <div class="texto_de_pagamento">
+                                                    <input type="radio" id="boleto" name="age" value="boleto">
+                                                        <label class="bol2" for="boleto">
+                                                            2 dias (xx/xx/xx) - descontado 12%, no valor de R$ (valor - 12,0%)
+                                                        </label>
+        </div>
+    </div>
+        
+        <div class="cancelar">
+            <button class="botao">Cancelar</button>
+            <button class="botao" onclick="changePage()"> Confirmar</button>
+        </div>
+    </div>
+    <script src="../JS/Solicitacao.js"></script>
+</body>
+</html>
