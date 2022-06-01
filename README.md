@@ -122,7 +122,9 @@ A cada atualização os detalhes devem ser lançados aqui.
     * Organização das pastas de Imagens e SRC.
     * Atualização da documentação
 * 0.4.0 - 29/05/2022
-    * UPgrade README.md
+    * Upgrade README.md
+* 0.5.0 - 01/06/2022
+    * Upgrade WAD com Arquitetura da Solução
 
 ## 📋 Licença/License
 
