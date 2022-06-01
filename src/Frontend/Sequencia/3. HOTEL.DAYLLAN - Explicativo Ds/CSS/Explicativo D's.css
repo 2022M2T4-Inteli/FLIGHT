@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
 }
-.cabeçalho{
-    width: 100%;
-    background-color: #3468fc;
-}
 
 .row{
     display: flex;
@@ -13,9 +9,6 @@
     gap: 1px;
 }
 
-.left-arrow{
-    width: 70px;
-}
 
 .dBox1{
     justify-content: center;

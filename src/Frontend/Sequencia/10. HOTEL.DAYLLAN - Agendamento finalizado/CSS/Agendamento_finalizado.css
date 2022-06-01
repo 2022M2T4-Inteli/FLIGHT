@@ -2,15 +2,8 @@
     margin: 0;
     padding: 0;
 }
-header{
-    width: 100%;
-    background-color:#3468fc;
 
-}
 
-.left-arrow{
-    width: 70px;
-}
 .check{
     width: 400px;
     margin-top: 10%;

@@ -3,17 +3,6 @@ body {
     padding: 0;
 }
 
-header{
-    width: 100%;
-    background-color:#3468fc;
-}
-.cabeçalho{
-    width: 100%;
-}
-.left-arrow{
-    width: 70px;
-}
-
 .escrita{
     text-align: center;
     margin-top: 2%;

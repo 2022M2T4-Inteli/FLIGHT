@@ -6,27 +6,11 @@
     width: 100%;
     height: 100%;
 }
-.topBar{
-    height: 100%;
-    background-color: #3468fA;
-    display: flex;
-    
-}
-.arrow{
-    width: 70px;
-    background-color: #3468fA;
-}
 
 .photohub{
     margin-top: 2px;
     height: 180px;
     background-color: white;
-}
-.Logo{
-    align-items: center;
-    align-self: center;
-    text-align: center;
-
 }
 .content {
     display: flex;
