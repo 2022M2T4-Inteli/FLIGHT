@@ -9,6 +9,7 @@
     align-content: center;
     gap: 1px;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -56,27 +57,17 @@
     text-align: center;
     background-color: #eaeaea;
     color: #3468fc;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
     border: 1px solid black;
     border-radius: 20px;
 }
 
 .bottonText{
-    align-items: center;
-    border: 5;
     border-color:#3468fc;
     border-radius: 10px;
     height: 100%;
     width: 100%;
-    margin-top: 4%;
     align-items: center;
     font-size: 30px;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 4%;
-    margin-bottom: 4%;
 }
 
 
