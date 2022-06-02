@@ -6,52 +6,60 @@ header{
     width: 100%;
     background-color:#3468fc;
 }
-
-.cabeçalho{
-    margin-bottom: 4%;
-}
-
 .left-arrow{
     width: 70px;
 }
 
-.Agendamento-automático{
+.auto-scheduling{
+    margin-top: 40px;
     color: black;
-    font-size: 64px;
+    font-size: 40px;
     font-weight: bold;
     text-align:center;
 }
-
+.boximg {
+    display: flex;
+    height: 50px;
+}
+.lil-img{
+    margin-right: 8px;
+    width: 80px;
+}
 .box1{
+    display:flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     background-color:white;
     border-radius:20px;
     border-color: #3468fc;
     color:#3468fc;
-    display:flex;
     font-size: 15px;
-    margin-top:7%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 80px;
 }
+.dateinput {
+    color: black;
+    text-align: center;
+}
+.dateimg_input {
+    display: flex;
+    flex-direction: column;
 
-.input_1_data{
+}
+#date2 {
+    margin-bottom:10px;
+}
+.inputs{
     text-align: center;
     border-radius: 20px;
     border: 1px solid #3468fc;
     color:black;
     border-color: #3468fc;
-    font-size: 30px;
-    width: 1000px;
-    height: 60px;
-    margin-left: 4%;
+    font-size: 20px;
+    width: 40%;
+    min-width: 600px;
+    height: 40px;
 }
 
-.calendar{
-    width: 140px;
-    height: 140px;
-}
 
 .box2{
     align-items: center;
@@ -87,11 +95,10 @@ header{
 }
 
 .texto_de_pagamento{
+    margin-top: 40px;
     font-size: 28px;
     text-align: center;
-    margin-left: 15%;
     color:black;
-    margin-bottom: 2%;
 }
 
 button{
@@ -113,8 +120,27 @@ label{
     color: #3468fc;
     font-size: 18px;
 }
+.formas_alinhadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-
+}
+.options {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.options_button {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.finishbutton {
+    margin-top: 40px;
+}
 @media only screen and (max-width: 768px){
     /*For mobile phones */
     .Agendamento-automático{
@@ -126,9 +152,10 @@ label{
         margin-bottom: 20%;
     }
 
-    .calendar{
+    .lil-img{
         width: 60px;
         height: 60px;
+        margin-right: 80px;
     }
 
     .box1{
@@ -144,7 +171,7 @@ label{
         margin-bottom: 4%;
     }
 
-    .input_1_data{
+    .input{
     text-align: center;
     border-radius: 20px;
     border: 1px solid #3468fc;

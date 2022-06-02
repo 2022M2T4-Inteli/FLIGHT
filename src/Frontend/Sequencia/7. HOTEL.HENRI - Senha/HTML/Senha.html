@@ -29,15 +29,16 @@
             </div>
                 
             <div class="digitos">
-            
-            <input class="dBox1">
-            <input type="number">
-            <input class="dBox2">
-            <input type="number">
-            </div>
+            <form>
+                <input name="somename"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1"/>
+                <input name="somename"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1"/>
+                <input name="somename"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1"/>
+                <input name="somename"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1"/>
+                </div>
+            </form>
         </div>
     <button class="confirmar" onclick="changePage()">
-        confirmar
+        Confirmar
     </button>
     <script src="../JS/Senha.js"></script>
 </body>
