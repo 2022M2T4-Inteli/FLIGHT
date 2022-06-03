@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    justify-content: center;
+}
+
 
 .row{
     display: flex;
@@ -9,6 +13,7 @@
     align-content: center;
     gap: 1px;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -51,32 +56,30 @@
 }
 
 .caixa-no-centro{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: #eaeaea;
     color: #3468fc;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
     border: 1px solid black;
     border-radius: 20px;
+    width: 80%;
 }
-
+.caixa-div {
+    display: flex;
+    justify-content: center;
+}
 .bottonText{
-    align-items: center;
-    border: 5;
+    
+    margin:8px;
     border-color:#3468fc;
     border-radius: 10px;
     height: 100%;
-    width: 100%;
-    margin-top: 4%;
+    width: 80%;
     align-items: center;
+    justify-self: center;
     font-size: 30px;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 4%;
-    margin-bottom: 4%;
 }
 
 

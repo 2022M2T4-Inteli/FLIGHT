@@ -19,52 +19,48 @@
         </div>
     </header>
     <body>
-        <div class="Agendamento-automático">
+        <div class="auto-scheduling">
             Agende suas antecipações
         </div>
 
     <form action="../Agendamento finalizado/Agendamento FInalizado.html" method="GET">
         <div class="box1">
             <box>
-                <img class="calendar" src="../HTML/calendar.png">
+                <img class="lil-img" src="../HTML/calendar.png">
             </box>
-            <input class="input_1_data" placeholder="Escreva a data que gostaria de receber. Ex: xx/xx/xxxx" required>
-            </input>
+            <div class="dateimg_input">
+                <label class = "dateinput" id = "date2" for ="dateinput">Escreva a data que gostaria de receber. Ex: xx/xx/xxxx" </label>
+                <input type = "date" class="inputs" name = "dateinput" required></input>
+            </div>
+    
         </div>
 
-        <div class="box2">
-            <box>
-                <img class="pay" src="../HTML/pay.png">
+        <div class="box1">
+            <box id = "boximg">
+                <img class="lil-img" src="../HTML/pay.png">
             </box>
-            <input class="input_2_reais" placeholder="Escreva o valor a receber. Ex: 2.000,00" required>
-            </input>
+            <input class="inputs" placeholder="Escreva o valor a receber. Ex: 2.000,00" required></input>
         </div>
         
-        <div row="formas_alinhadas">
+        <div class="formas_alinhadas">
 
             <div class="texto_de_pagamento">
                 <p>Selecione a forma de pagamento</p>
             </div>
-            <div>
-                <input type="radio" id="boleto" name="age" value="boleto">
-                    <label class="bol" for="boleto">
-                        Boleto
-                    </label>
-                </input>
-
-                <input type="radio" id="pix" name="age" value="pix">
-                    <label class="pix" for="pix">
-                        Pix
-                    </label>
-                </input>
-
-                <input type="radio" id="transferência" name="age" value="Transferência">
-                    <label class="transferência" for="transferência">
-                        Transferência
-                    </label>
-                </input>
-
-                <div class="finalizar">
+            <div class = "options_button">
+                <div class="options">
+                    <div class="boletooption">
+                        <input type="radio" id="boleto" name="age" value="boleto"></input><label class="bol" for="boleto">Boleto</label>
+                    </div>
+                    <div class="pixoption">
+                        <input type="radio" id="pix" name="age" value="pix"></input><label class="pix" for="pix">Pix</label>
+                    </div>
+                    <div class="transferenciaoption">
+                        <input type="radio" id="transferência" name="age" value="Transferência"><label class="transferência" for="transferência">Transferência</label>
+                        </input>
+                    </div>
+                </div>
+                <div class="finishbutton">
                     <button type="submit" onclick="changePage1()">
                         Finalizar Agendamento
                     </button>

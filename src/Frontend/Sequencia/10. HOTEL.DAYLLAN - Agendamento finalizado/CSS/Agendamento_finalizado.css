@@ -2,26 +2,38 @@
     margin: 0;
     padding: 0;
 }
+header{
+    width: 100%;
+    background-color:#3468fc;
 
-
-.check{
-    width: 400px;
-    margin-top: 10%;
-    margin-left: 35%;
 }
 
-.texto{
-    margin-top: 3%;
-    margin-left: 35%;
-    margin-right: 35%;
+.left-arrow{
+    width: 70px;
+}
+.checkdiv {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.check{
+    width: 200px;
+}
+
+.finished-scheduling{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
     font-size: 36px;
 }
-
-.button_inicio{
-    margin-top: 2%;
-    margin-left: 45%;
+.home_button-div {
+    margin-top: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.home_button{
     background:#8CAAFD;
-    font-family: montserrat;
     color:white;
     border:1px solid #8CAAFD;
     text-align: center;

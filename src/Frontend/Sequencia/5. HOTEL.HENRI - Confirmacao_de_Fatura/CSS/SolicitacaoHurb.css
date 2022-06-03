@@ -5,8 +5,7 @@ body {
 
 .escrita{
     text-align: center;
-    margin-top: 2%;
-    font-size: 72px;
+    font-size: 50px;
 }
 
 hr{
@@ -15,12 +14,22 @@ hr{
     color: #3468fc;
     border: #0000;
 }
-
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 .valor_a_receber{
     font-size: 30px;
-    margin-top: 8%;
 }
-
+.receive-in-text {
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 30px;
+}
 .input_1_data{
     border-radius: 20px;
     border: 1px solid #3468FC;
@@ -30,10 +39,15 @@ hr{
     width: 700px;
     height: 80px;
     text-align: center;
+    margin-top: 25px;
     background-color: #eaeaea;
     text-align: center;
 }
-
+.opcoes {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+}
 ::placeholder{
     color: black;
 }
@@ -52,9 +66,8 @@ button{
 
 .quadrado{
     text-align: center;
-    margin-top: 3%;
+    margin-top: 30px;
     border: 1px solid #3468fc;
-    margin-left: 2%;
     font-size: 25px;    
 }
 
@@ -65,13 +78,17 @@ button{
 }
 
 .botao{
+    margin-right: 40px;
+    margin-left: 40px;
     align-items: left;
     width: 200px;
     font-size: 30px;
-    margin-right: 500px;
     background-color: #8CAAFD;
+    margin-bottom: 20px;
 }
 .cancelar{
+    display: flex;
+    justify-content: center;
     border-radius: 25px;
     border: 5px solid #0000;
     color:black;
@@ -79,81 +96,4 @@ button{
     font-size: 55px;
     width: 800px;
     display: flex;
-}
-
-
-@media only screen and (max-width: 888px) {
-    /* For mobile phones: */
-    .escrita{
-        font-size: 30px;
-    }
-
-    .valor_a_receber{
-        font-size: 30px;
-        margin-top: 2%;
-    }
-    
-    .input_1_data{
-        border-radius: 20px;
-        width: 90%;
-        border: 1px solid #3468FC;
-        color:black;
-    }
-
-    ::placeholder{
-        color: #3468fc;
-    }
-
-    button{
-        border-radius: 50px;
-        border: 2px solid #0000;
-        color:black;
-        border-color: #3468fc;
-        font-size: 15px;
-        width: 100px;
-        height: 70px;
-        background-color: white;
-    }
-
-    .quadrado{
-        background-color: #eaeaea;
-        border-radius: 20px;
-        align-items:baseline;
-        width: 90%;
-        margin-top: 6%;
-        border: 1px solid #3468fc;
-    }
-
-    .texto_de_pagamento{
-        color:black;
-        font-size: 20px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-        
-    .all{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .botao{
-        height: 40px;
-        font-size: 25px;
-        background-color: #8CAAFD;
-        margin-right: 30%;
-    }
-
-    .cancelar{
-        border-radius: 25px;
-        border: 5px solid #0000;
-        color:black;
-        width: 80%;
-        font-size: 25px;
-        margin-top: 15%;
-        margin-left: 1%;
-        margin-right: 2%;
-    }
-        
 }
