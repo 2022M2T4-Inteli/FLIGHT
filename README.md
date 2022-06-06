@@ -20,7 +20,7 @@ Para hotéis que se enquadram na regra de negócios padrão (pagamento no D+30 p
 &emsp;&emsp;&emsp;Na antecipação D2, o desconte é de 12% do total devido ao fornecedor;<br>
 &emsp;&emsp;&emsp;Na antecipação D7, o desconte é de 9% do total devido ao fornecedor;<br>
 &emsp;&emsp;&emsp;Na antecipação D15, o desconte é de 6% do total devido ao fornecedor.<br>
-Nossa solução é a criação de uma plataforma mobile para os hoteleiros parceiros do Hurb para facilitação do pedido de antecipação após o faturamento do check-out.
+Nossa solução é a criação de uma plataforma web para os hoteleiros parceiros do Hurb para facilitação do pedido de antecipação após o faturamento do check-out.
 <br><br>
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
