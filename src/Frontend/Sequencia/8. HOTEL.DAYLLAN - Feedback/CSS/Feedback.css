@@ -11,31 +11,23 @@ header{
     width: 70px;
 }
 .time-line {
-    display: flex;
-    width: 100%;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
 }
+
+.time-margin{
+    display:flex;
+    justify-content: center;
+
+}
+
 .clockdiv {
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
+    margin-left: 40%;
+    margin-right: 40%;
 }
-.clock{
-    align-items: flex-end;
-}
-.time-margin {
-    width: 35%;
-    display: flex;
-    justify-content: flex-end;
-}
-.time {
-    display: flex;
-    justify-content: flex-start;
-    width: 60%;
-    text-align: center;
-    align-content: center;
-}
+
 .text_tranferência_concluída{
     text-align: center;
     font-size: 40px;
@@ -44,11 +36,9 @@ header{
 }
 
 .date{
-    margin-top: 40px;
-    text-align: start;
-    font-size: 30px;
-    width: 60%;
-    justify-content: center;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .check-icon {
@@ -60,17 +50,17 @@ header{
 }
 
 .home-button {
-    margin-top: 70px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
 .confirm-button {
     justify-content: center;
-    height: 80px;
-    width: 120px;
+    height: 50px;
+    width: 220px;
     border-radius: 25px;
+    border: 1px solid #8CAAFD;
     background-color: #8CAAFD;
-    border:0;
     color: white;
     font-size: 30px;
 }
