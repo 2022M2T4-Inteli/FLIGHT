@@ -98,9 +98,9 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 -<a href="https://sqlitebrowser.org/dl/">DB browser</a>
 
 ```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+npm install sqlite3
+$ npm install ajax
+$ npm install body-parser
 ```
 
 ## 🗃 Histórico de lançamentos
