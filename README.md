@@ -134,3 +134,6 @@ Aqui estão as referências usadas no projeto.
 
 1. <https://stackoverflow.com/>
 2. <https://www.w3schools.com/>
+3. <jquery-3.6.0.min.js>
+3. <https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js>
+4. <>
