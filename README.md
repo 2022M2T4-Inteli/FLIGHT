@@ -37,6 +37,7 @@ Nossa solução é a criação de uma plataforma web para os hoteleiros parceiro
           &emsp;|-->antigos<br>
           &emsp;WAD - Documento Aplicação Web.pdf<br>
 📷imagens<br>
+  &emsp;📁|-->Ícone Utilizados<br>
 💾src<br>
   &emsp;📁|-->BACK-END<br>
   &emsp;📁|-->FRON-END<br>
