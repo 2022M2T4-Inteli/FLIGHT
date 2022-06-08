@@ -99,7 +99,9 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+-<a href="https://nodejs.org/en/">Node.JS</a>
+-<a href="https://www.sqlite.org/download.html">SQLite</a>
+-<a href="https://sqlitebrowser.org/dl/">DB browser</a>
 
 ```sh
 make install
