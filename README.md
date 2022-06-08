@@ -67,6 +67,7 @@ npm install sqlite3
 $ npm install express
 $ npm install body-parser
 ```
+Esses comandos vão colocar na sua maquina todas as bibliotecas que fazem o site rodar. Para colocar em contexto o SQLite foi usado para o banco de dados. 
 
 ## 📈 Exemplo de uso
 
