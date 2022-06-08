@@ -85,13 +85,7 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 📈 Exemplo de uso
 
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado.
-
-Adicione blocos de códigos e, se necessário, screenshots.
-
-Este modelo pode ser copiado e utilizado à vontade.
-
-Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
+Nosso projeto vai ser utilizados por hoteleiros que se encaixam na regra de negocío D+30 para conseguirem antecipações das reservas feitas pelo site da HURB
 
 ## 💻 Configuração para Desenvolvimento
 
