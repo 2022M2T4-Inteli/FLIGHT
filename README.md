@@ -97,7 +97,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 -<a href="https://www.sqlite.org/download.html">SQLite</a>
 -<a href="https://sqlitebrowser.org/dl/">DB browser</a>
 
-<a>Para fazer alterações no back necesita instalar esse:</a>
+Para fazer alterações no back necesita instalar esse:
 ```sh
 npm install sqlite3
 $ npm install ajax
