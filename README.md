@@ -85,7 +85,7 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 📈 Exemplo de uso
 
-Nosso projeto vai ser utilizados por hoteleiros que se encaixam na regra de negocío D+30 para conseguirem antecipações das reservas feitas pelo site da HURB
+Nosso projeto vai ser utilizados por hoteleiros que se encaixam na regra de negocío D+30 para conseguirem antecipações das reservas feitas pelo site da HURB. As antecipações são automatizadas para
 
 ## 💻 Configuração para Desenvolvimento
 
