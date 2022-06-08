@@ -10,6 +10,20 @@ const DBPATH = 'dbHURB.db';
 app.use(express.json())
 
 
+app.post('/createbooking', urlencodedParser, (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
+	sql = "INSERT INTO RESERVA (cpf, login, senha, nome) VALUES ('" + req.body.cpf + "', '" + req.body.login + "', '" + req.body.senha + "', '" + req.body.nome + "')";
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+	db.run(sql, [],  err => {
+		if (err) {
+		    throw err;
+		}
+	});
+	db.close(); // Fecha o banco
+	res.end();
+});
+
 // Adicionar um parceiro com seu nome e montante total(que vai ser calculado automaticamente e não manualmente, e atualizado em tempo real)
 app.post('/createpartner', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
