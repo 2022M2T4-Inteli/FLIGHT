@@ -23,7 +23,7 @@ Para hotéis que se enquadram na regra de negócios padrão (pagamento no D+30 p
 Nossa solução é a criação de uma plataforma web para os hoteleiros parceiros do Hurb para facilitação do pedido de antecipação após o faturamento do check-out.
 <br><br>
 <p align="center">
-<img src=https://www.google.com/search?q=hurb+logo&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjW26fgi574AhVotJUCHe7PDzcQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25#imgrc=wXRDwVnZ3tAEvMhttps://pt.wikipedia.org/wiki/Ficheiro:Logo-hurb-branca-bg-azul.jpg" alt="NOME DO JOGO" border="0">
+<img src="https://www.google.com/search?q=hurb+logo&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjW26fgi574AhVotJUCHe7PDzcQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25#imgrc=wXRDwVnZ3tAEvMhttps://pt.wikipedia.org/wiki/Ficheiro:Logo-hurb-branca-bg-azul.jpg" alt="NOME DO JOGO" border="0">
   Web Solution by <a href="http://www.nyphotographic.com/">Sistema de antecipação</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
