@@ -100,7 +100,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 Para fazer alterações no back necesita instalar esse:
 ```sh
 npm install sqlite3
-$ npm install ajax
+$ npm install express
 $ npm install body-parser
 ```
 
