@@ -60,7 +60,13 @@ Há também 3 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-
+Caso quiser mexer no nosso site vai ser necesário fazer a configuração do ambiente. Rode no terminal do VS-code os seguintes comandos:
+```sh
+npm start
+npm install sqlite3
+$ npm install express
+$ npm install body-parser
+```
 
 ## 📈 Exemplo de uso
 
