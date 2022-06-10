@@ -101,16 +101,16 @@ A cada atualização os detalhes devem ser lançados aqui.
 * 0.2.1 - 05/01/2022
     * Exclusão do modelo GDD e atualização do WAD;<br>
 * 0.2.1 - 05/01/2022
-    * Atualização do Readme.md;
+    * Atualização do Readme.md;<br>
 * 0.3.0 - 15/05/2022
-    * Organização das pastas de Imagens e SRC;
-    * Atualização da documentação;
+    * Organização das pastas de Imagens e SRC;<br>
+    * Atualização da documentação;<br>
 * 0.4.0 - 29/05/2022
-    * Update README.md;
+    * Update README.md;<br>
 * 0.5.0 - 01/06/2022
-    * Update WAD com Arquitetura da Solução;
+    * Update WAD com Arquitetura da Solução; <br>
 * 0.6.0 - 10/06/2022
-    * Update do README.md com correções ortográficas.
+    * Update do README.md com correções ortográficas.<br>
 
 ## 📋 Licença/License
 
