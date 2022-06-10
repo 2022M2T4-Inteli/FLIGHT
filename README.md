@@ -17,9 +17,9 @@
 <br><br>
 O problema a ser resolvido dentro do Hurb em parceria com o time Inteli e a equipe F.L.I.G.H.T. é a exploração da receita de antecipação a fornecedores.<br>
 Para hotéis que se enquadram na regra de negócios padrão (pagamento no D+30 pós check out do guest), há a oferta de modelos de antecipação do pagamento em D2, D7 e D15:<br>
-&emsp;&emsp;&emsp;Na antecipação D2, o desconte é de 12% do total devido ao fornecedor;<br>
-&emsp;&emsp;&emsp;Na antecipação D7, o desconte é de 9% do total devido ao fornecedor;<br>
-&emsp;&emsp;&emsp;Na antecipação D15, o desconte é de 6% do total devido ao fornecedor.<br>
+&emsp;&emsp;&emsp;Na antecipação D2, o desconto é de 12% do total devido ao hoteleiro parceiro;<br>
+&emsp;&emsp;&emsp;Na antecipação D7, o desconto é de 9% do total devido ao hoteleiro parceiro;<br>
+&emsp;&emsp;&emsp;Na antecipação D15, o desconto é de 6% do total devido ao hoteleiro parceiro.<br>
 Nossa solução é a criação de uma plataforma web para os hoteleiros parceiros do Hurb para facilitação do pedido de antecipação após o faturamento do check-out.
 <br><br>
 <p align="center">
@@ -106,9 +106,9 @@ A cada atualização os detalhes devem ser lançados aqui.
     * Organização das pastas de Imagens e SRC.
     * Atualização da documentação
 * 0.4.0 - 29/05/2022
-    * Upgrade README.md
+    * Update README.md
 * 0.5.0 - 01/06/2022
-    * Upgrade WAD com Arquitetura da Solução
+    * Update WAD com Arquitetura da Solução
 
 ## 📋 Licença/License
 
