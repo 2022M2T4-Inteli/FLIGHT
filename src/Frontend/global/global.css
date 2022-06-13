@@ -6,6 +6,7 @@
     display: flex;
     height: 80px;
     background-color: #3468fa;
+    width: 100%;
 }
 .leftSide {
     align-items: center;
@@ -26,4 +27,9 @@
 .left-arrow{
     margin-left: 2px;
     height: 70px;
+    cursor: pointer;
 }
+button {
+    cursor: pointer;
+}
+
