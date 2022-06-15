@@ -40,6 +40,7 @@ app.get('/feedback', (req, res) => {
 	});
 	db.close(); // Fecha o banco
 });
+
 app.get('/get-ds', (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
