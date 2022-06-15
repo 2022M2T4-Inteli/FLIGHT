@@ -113,6 +113,8 @@ A cada atualização os detalhes devem ser lançados aqui.
     * Update do README.md com correções ortográficas;<br>
 * 0.7.0 - 15/06/2022
     * Atualização da API do Postman.<br>
+* 0.8.0 - 15/06/2022
+    *Representação da arquitetura da solução concluída.<br>
 
 ## 📋 Licença/License
 
