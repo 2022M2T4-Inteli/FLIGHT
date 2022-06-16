@@ -1,16 +1,20 @@
-var texto_original = "**********";
+var texto_original = "teobaldo";
 function openEye(){
-    if(document.getElementById("teste").src=="http://127.0.0.1:5501/olho_aberto2.png")
+    if(document.getElementById("teste").src=="olho_aberto2.png")
     {
         console.log("passei aqui!");
         document.getElementById("teste").src = "olho_fechado.png";
         texto_original=document.getElementById("teste2").innerText;
         document.getElementById("teste2").innerText = "*******";
+        //console.log(texto_original)
     }
     else
     {
+        console.log("passei aqui! 2");
         document.getElementById("teste").src = "olho_aberto2.png";
         document.getElementById("teste2").innerText = texto_original;
+        //document.location.reload(true);
+        console.log(texto_original)
     }
    
 }

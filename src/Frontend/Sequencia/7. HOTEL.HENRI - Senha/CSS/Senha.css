@@ -12,7 +12,7 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.quadrado{
+.square{
     border: 2px solid #3468fA;
     width: 50%;
     min-width: 680px;
@@ -21,13 +21,13 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 100px;
 }
 
-.escrita{
+.writing{
     text-align: center;
     color: white;
     font-size: 36px;
 }
 
-.digitos{
+.digits{
     text-align: center;
     font-size: 64px;
 }
@@ -68,7 +68,7 @@ h1{
     color: black;
 }
 
-.confirmar{
+.confirm{
     border: 1px solid #8CAAFD;
     background-color: #8CAAFD;
     border-radius: 100px;
@@ -76,6 +76,22 @@ h1{
     color: white;
     width: 250px;
     height: 80px;
+}
+.logo{
+    height: 80px;
+}
+.topBar{
+    background-color:#3468FC;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 89px;
+    
+}
+.left-arrow{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 12.5px;
 }
 
 @media only screen and (max-width: 768px){

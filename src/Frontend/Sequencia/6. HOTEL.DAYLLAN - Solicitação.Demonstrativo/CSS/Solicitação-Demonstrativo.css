@@ -10,12 +10,16 @@ body {
     justify-content: center;
 }
 header{
+    background-color: #3468fA;
+    height: 89px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    background-color:#3468fc;
 }
 
 
-.demonstrativo{
+.Demonstrative{
     width: 80%;
     text-align: center;
     font-weight: bold;
@@ -47,21 +51,21 @@ header{
     font-size: 30px;
 }
 
-.data_de_faturamento{
+.billing-date{
     font-size: 30px;
     width: 50%;
     text-align: start;
     margin-left: 20px;
 }
 
-.calendar_de_faturamento{
+.billing-calendar{
     color: #8CAAFD;
     font-size: 30px;
     width: 50%;
     text-align: start;
 }
 
-.Sistema_escolhido{
+.chosen-system{
     font-size: 30px;
     width: 50%;
     text-align: start;
@@ -75,55 +79,55 @@ header{
     text-align: start;
 }
 
-.data_da_hospedagem{
+.hosting-date{
     font-size: 30px;
     width: 50%;
     text-align: start;
     margin-left: 20px;
 }
 
-.calendar_de_hospedagem{
+.hosting-calendar{
     color: #8CAAFD;
     font-size: 30px;
     width: 50%;
     text-align: start;
 }
 
-.valor_requerido{
+.chosen-value{
     font-size: 30px;
     text-align: start;
     margin-left: 20px;
     width: 50%;
 }
 
-.valor_em_reais_requerido_{
+.chosen-value-reais{
     width: 50%;
     color: #8CAAFD;
     font-size: 30px;
     text-align: start;
 }
 
-.valor_a_receber{
+.amount-receivable{
     font-size: 30px;
     width: 50%;
     text-align: start;
     margin-left: 20px;
 }
 
-.valor_em_reais_descontado_{
+.amount-receivable-discounted{
     color: #8CAAFD;
     width: 50%;
     font-size: 30px;
     text-align: start;
 }
 
-.importante-seguranca{
+.warning{
     margin-top: 40px;
     font-size: 40px;
     color:red;
 }
 
-.mensagem{
+.message{
     margin-top: 40px;
     background-color: #eaeaea;
     text-align: center;
@@ -132,7 +136,7 @@ header{
     font-size: 40px;
 }
 
-.confirmar {
+.confirm {
     border: 1px solid #8CAAFD;
     background-color: #8CAAFD;
     border-radius: 100px;
@@ -141,6 +145,21 @@ header{
     width: 250px;
     height: 80px;
     margin-top: 40px;
+}
+.topBar{
+    background-color:#3468FC;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 89px; 
+}
+.left-arrow{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 12.5px;
+}
+.logo{
+    height: 80px;
 }
 
 

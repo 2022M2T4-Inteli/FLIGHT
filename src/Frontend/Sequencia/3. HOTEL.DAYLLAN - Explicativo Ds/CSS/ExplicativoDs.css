@@ -5,6 +5,14 @@
 body {
     justify-content: center;
 }
+header{
+    background-color: #3468fA;
+    height: 89px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 
 
 .row{
@@ -55,7 +63,7 @@ body {
     display: flex;
 }
 
-.caixa-no-centro{
+.box-center{
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -66,7 +74,7 @@ body {
     border-radius: 20px;
     width: 80%;
 }
-.caixa-div {
+.box-div {
     display: flex;
     justify-content: center;
 }
@@ -81,6 +89,23 @@ body {
     justify-self: center;
     font-size: 30px;
 }
+.logo{
+    height: 80px;
+}
+.topBar{
+    background-color:#3468FC;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 89px;
+    
+}
+.left-arrow{
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 12.5px;
+}
+
 
 
 @media only screen and (max-width: 768px) {
