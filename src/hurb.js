@@ -13,19 +13,6 @@ app.use(express.static("fronthurb"));
 
 // Adicionar um parceiro com seu nome e montante total(que vai ser calculado automaticamente e não manualmente, e atualizado em tempo real)
 
-app.get('/users', (req, res) => {
-	res.statusCode = 200;
-	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
-	var db = new sqlite3.Database(DBPATH); // Abre o banco
-  var sql = 'SELECT * FROM PARCEIRO ORDER BY id COLLATE NOCASE';
-	db.all(sql, [],  (err, rows ) => {
-		if (err) {
-		    throw err;
-		}
-		res.json(rows);
-	});
-	db.close(); // Fecha o banco
-});
 
 app.get('/feedback', (req, res) => {
 	res.statusCode = 200;
@@ -55,6 +42,21 @@ app.get('/get-ds', (req, res) => {
 	db.close(); // Fecha o banco
 });
 
+app.post('/save-new-partner', urlencodedParser, (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
+	sql = "INSERT INTO CONTA (login, senha, email, parceiro_id) VALUES ('" + req.body.login + "', '" + req.body.senha + "', '" + req.body.email + "' , '" + req.body.parceiro_id + "')";
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+	db.run(sql, [],  err => {
+		if (err) {
+		    throw err;
+		}
+	});
+	db.close(); // Fecha o banco
+	res.end();
+});
+
 app.listen(port, hostname, () => {
     console.log(`BD server running at http://${hostname}:${port}/`);
   });
+

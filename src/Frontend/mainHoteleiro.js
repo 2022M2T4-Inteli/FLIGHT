@@ -40,3 +40,13 @@ function configuracoes(){
 function saiba_mais(){
     window.location= 'file:///C:/Users/Inteli/Desktop/DESENVOLVIMENTO%20WEB/NOVAS%20TELAS%20-%20DAYLLAN/Apresenta%C3%A7%C3%A3o/2.%20HOTEL.HENRI%20-%20Menu.Hoteleiro/HTML/tela%20de%20cadastro.html'
 }
+
+function getAmount() {
+    $.get("http://127.0.0.1:3000/get-access", function(access) {
+        let logged = access[0].login_parceiro;
+        console.log(logged)
+        $.get("http://127.0.0.1:3000/users", function(users) {
+            
+        })})
+
+    }
