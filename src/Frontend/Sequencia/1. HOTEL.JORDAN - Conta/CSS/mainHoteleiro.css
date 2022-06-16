@@ -85,35 +85,20 @@
         margin-bottom: 40px;
         border:0;
     }
-    .footerButtons-group {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-
-    }
-
-    .footerButton {
-        justify-content: space-evenly;
-        width: 130px;
-        height: 130px;
-        border-radius: 30px;
-        margin-right: 25px;
-        border: 0;
-        background-color: #8CAAFD;
-    }
 
     .iconButton {
         height:90px;
         width: 100px;
     }
     .logo{
-        height: 85px;
+        height: 80px;
     }
     .topBar{
         background-color:#3468FC;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+        height: 89px;
     }
 
 
@@ -190,19 +175,6 @@
             height: 30vh;
             width: 100%;
             margin:2%;
-        }
-    
-        .footerButton {
-            height:70px;
-            max-height: 70px;
-            width: 200px;
-            max-width: 180px;
-            border-radius: 40px;
-            margin-top:2%;
-            margin-left: 2%;
-            margin-right: 2%;
-            border: 0;
-            background-color: #8CAAFD;
         }
     
         .iconButton {
