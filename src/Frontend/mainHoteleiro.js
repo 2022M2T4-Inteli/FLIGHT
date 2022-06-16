@@ -44,7 +44,6 @@ function saiba_mais(){
 function getAmount() {
     $.get("http://127.0.0.1:3000/get-access", function(access) {
         let logged = access[0].login_parceiro;
-        console.log(logged)
         $.get("http://127.0.0.1:3000/users", function(users) {
             
         })})
