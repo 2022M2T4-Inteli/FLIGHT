@@ -14,7 +14,7 @@
     <script src="mainHoteleiro.js"></script>
     <title>tela principal</title>
 </head>
-<body onload = "getAmount()">
+<body onload = "getAmount()", >
         <div class = "topBar">
             <div class = "leftSide">
                 <img class="menu" src="Sequencia/Conta/HTML/menu.png" onclick="openMenu()">
@@ -29,11 +29,9 @@
            
             <div class="valuenoeye"> 
                 <div class="imgeye">
-                    <img class="eye" src="Sequencia/Conta/HTML/olho_aberto2.png" inputmode="olho" onclick="openEye()")>
+                    <img id ="eyeimg" class="eye" src="Sequencia/Conta/HTML/olho_aberto2.png" inputmode="olho" onclick="openEye()")>
                 </div>
-                <button onclick = "" id="teste2" class="value">
-                    R$ XXXXX
-                </button>
+                <div onclick = "" id="teste2" class="value">R$ </div>
             </div>
         </div>
         <div class="buttons">
