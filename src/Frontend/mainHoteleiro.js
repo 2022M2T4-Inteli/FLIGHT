@@ -1,9 +1,5 @@
 function openEye(){
-    let i = 0;  
-    let size = (document.getElementById("teste2").innerHTML).length
-    if(document.getElementById("eyeimg").src=="http://127.0.0.1:5500/Frontend/Sequencia/Conta/HTML/olho_aberto2.png") {
-        
-    }}
+    }
 function openMenu() {
     window.location = 'Sequencia/MenuHoteleiro/HTML/menu.html'
 }
