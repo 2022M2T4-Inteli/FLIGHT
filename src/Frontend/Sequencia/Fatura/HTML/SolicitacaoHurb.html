@@ -13,23 +13,38 @@
         <header>
             <div class = "topBar">
                 <div class = "leftSide">
-                    <img class="left-arrow" src="../../../global/flecha_borda_grossa_centro.png" onclick="history.back()">
+                    <img class="left-arrow" src="flecha_borda_grossa_centro.png" onclick="history.back()">
                 </div>
                 <div class="rightSide">
-                    <img class = "logo" src = "../../../global/Logo.Hurb.png">
+                    <img class = "logo" src = "hub_logo.png">
                 </div>
             </div>
         </header>
-        <div class="escrita" >
+        <div class="write" >
             <hr> 
             Confirmação de Fatura
             <hr> 
         </div>
         
     <div class="all">
-        <div class="valor_a_receber">
+        <div class="amount-receivable">
             Valor a receber:
         </div>
+<<<<<<< HEAD:src/Frontend/Sequencia/5. HOTEL.HENRI - Confirmacao_de_Fatura/HTML/SolicitacaoHurb.html
+        <input class="input_1_data" placeholder=" ''Digite aqui'' " type="number"></input>
+    <div class="square">
+        <div class = "receive-in-text">Receba dentro de :</div>
+        <div class="options">
+            <form>
+                <input type = "radio" name = "d30" id = "d30" class = "radioinput">
+                <label for = "d30">30 Dias (xx/xx/xx) - sem abatimento, valor final de R$(sem desconto)</label><br>
+                <input type = "radio" name = "d15" id = "d15" class = "radioinput">
+                <label for = "d15">15 dias (xx/xx/xx) - descontado 6%, valor final de R$(valor - 6%)</label><br>
+                <input type = "radio" name = "d7" id = "d7" class = "radioinput">
+                <label for = "d7">7 dias (xx/xx/xx) - descontado 9%, valor final de R$(valor - 9%)</label><br>
+                <input type = "radio" name = "d2" id = "d2" class = "radioinput">
+                <label for = "d2">2 dias (xx/xx/xx) - descontado 12%, valor final de R$(valor - 12%)</label>
+=======
         <input id = "valorEscolhido" class="input_1_data" placeholder=" ''Digite aqui'' " type="number" required onkeydown="javascript: return event.keyCode == 69 ? false : true" />
     <div class="quadrado">
         <div class = "receive-in-text">Receba dentro de :</div>
@@ -43,13 +58,20 @@
                 <label id = "label7" for = "d7">7 dias (xx/xx/xx) - descontados 9%, valor final de R$(valor - 9%)</label><br>
                 <input type = "radio" name = "d" id = "d2" class = "radioinput" value = 2>
                 <label id = "label2" for = "d2">2 dias (xx/xx/xx) - descontados 12%, valor final de R$(valor - 12%)</label>
+>>>>>>> c41f372ea4c81873aa7f9d5658eff7732389fb05:src/Frontend/Sequencia/Fatura/HTML/SolicitacaoHurb.html
             </form>
         </div>
  
         
+<<<<<<< HEAD:src/Frontend/Sequencia/5. HOTEL.HENRI - Confirmacao_de_Fatura/HTML/SolicitacaoHurb.html
+        <div class="cancel">
+            <button class="button">Cancelar</button>
+            <button class="button" onclick="changePage()"> Confirmar</button>
+=======
         <div class="cancelar">
             <button class="botao">Cancelar</button>
             <button class="botao" onclick="confirm()"> Confirmar</button>
+>>>>>>> c41f372ea4c81873aa7f9d5658eff7732389fb05:src/Frontend/Sequencia/Fatura/HTML/SolicitacaoHurb.html
         </div>
     </div>
     <script src="../JS/Solicitacao.js"></script>
