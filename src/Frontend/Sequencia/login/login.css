@@ -1,0 +1,401 @@
+body {
+    margin: 0;
+    background-color: #3468FA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    margin-top: 0%;
+    width: 100%;
+}
+
+#container-pai {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.pc {
+    display: flex;
+    flex-direction: row;
+    min-height: 700px;
+    height: 100%;
+    background-color: #3468FA;
+}
+
+.margin {
+    height: 100%;
+    width: 25%;
+    background-color: #3468FA;
+}
+
+.container-payment {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-width: 600px;
+    height: 100%;
+    background-color: white;
+}
+
+#topborder {
+
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    background-color: #3468FA;
+}
+
+.seal {
+    margin-right: 3px;
+    height: 60px;
+}
+
+#content2 {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#a {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+}
+/* 
+#ab {
+
+} */
+.pay {
+    text-align: center;
+    width: 60px;
+}
+
+#b {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    margin-left: 20px;
+    color: black;
+    height: 50%;
+}
+/* 
+#c {
+
+} */
+
+#final-Value-Text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#value {
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+#d {
+    display: flex;
+    justify-content: center;
+}
+
+#receivingMode {
+    background-color: white;
+    height: 45px;
+    margin-top: 15px;
+    margin-right: 14px;
+    margin-bottom: 7px;
+    border: 1;
+    border-color: #3468FA;
+    border-radius: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.separator {
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.stats1 {
+    margin-left: 15px;
+    width: 50%;
+}
+
+#Vencimento {
+    margin-bottom: 10px;
+}
+#Data-Solic {
+    margin-bottom: 10px;
+}
+#Beneficiario {
+    margin-bottom: 10px;
+}
+/* #Percentual {
+    
+} */
+.stats2 {
+    margin-right: 15px;
+    justify-content: right;
+    width: 50%;
+}
+
+#vencimento-Data {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#solicitacao-Data {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#beneficiario {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#percentual-Antecipacao {
+    text-align: right;
+}
+
+.warning-Content {
+    background-color: rgb(255, 252, 105);
+    margin-top: 50px;
+    border: dashed 4px;
+    text-align: center;
+} 
+
+#important {
+    color: red;
+    font-size: 20px;
+}
+
+#text-opcoes {   
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}  
+
+.div-img-opcoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column {
+    text-align: center;
+}
+
+#pix {
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+}
+
+#bolet {
+    align-self: center;
+    height: 80px;
+    margin-left: 50px;
+}
+#transf {
+    width: 130px;
+    height: 80px;
+}
+
+.nomes-opcoes {
+    align-self: center;
+}
+.container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-width: 350px;
+    height: 100%;
+    background-color: #3468FA;
+
+}
+
+.teste {
+    align-self: right;
+}
+
+
+
+#back {
+
+    width: 10%;
+}
+
+#topside {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 35%;
+    align-content: center;
+
+}
+
+#content1 {
+
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3468FA;
+
+}
+
+.content3 {
+
+    background-color: blue;
+}
+
+#logo {
+    margin-top: 80px;
+    align-self: center;
+    width: 150px;
+
+}
+
+.label {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin-bottom: 25px;
+    text-align: center;
+
+}
+
+#center {
+    color: white;
+    text-align: center;
+}
+
+#login {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: medium;
+    text-align: center;
+    height: 30px;
+
+}
+
+.input-style {
+
+    font-size: larger;
+    border-radius: 7px;
+    align-content: center;
+    color: black;
+    margin-bottom: 15px;
+    width: 40%;
+    height: 50%;
+    max-width: 300px;
+
+}
+#ForgotPassword {
+    color: white;
+    margin-top: 0%;
+}
+
+#loginButton {
+    border: 0;
+    min-width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    color: #3468FC;
+    width: 30%;
+    border-radius: 13px;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+#ac {
+    width: 33%;
+}
+#ca {
+    height: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pix {
+    flex: 1;
+}
+.transf {
+    flex: 1;
+}
+.bolet {
+    flex: 1;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: auto;
+    background-color: #C4C4C4;
+    height: 10%;
+}
+#finish-button {
+    margin-top: 10px;
+    color: white;
+    background-color: #3468FA;
+    border: 1;
+    width: 20%;
+    margin-right: 20px;
+    height: 60px;
+    align-self: flex-end;
+    border-radius: 25px;
+}
+
+
+
+
+#testea {
+    margin-right: 26px;
+}

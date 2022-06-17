@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="../CSS/Senha.css"> 
+    <link rel = "stylesheet" href = "../../../global/global.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>telas senha</title>
+</head>
+<body>
+        <header>
+            <div class = "topBar">
+                <div class = "leftSide">
+                    <img class="left-arrow" src="../../../global/flecha_borda_grossa_centro.png" onclick="history.back()">
+                </div>
+                <div class="rightSide">
+                    <img class = "logo" src = "../../../global/Logo.Hurb.png">
+                </div>
+            </div>
+        </header>
+    <div class="background">
+        <div class="quadrado">
+            <div class="escrita">
+                <h1> Senha de 4 digitos </h1>
+            </div>
+                
+            <div class="digitos">
+            <form>
+                <input required name="somename"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "password" maxlength = "1"/>
+                <input required name="somename"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "password" maxlength = "1"/>
+                <input required name="somename"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "password" maxlength = "1"/>
+                <input required name="somename"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "password" maxlength = "1"/>
+                </div>
+            </form>
+        </div>
+    <button class="confirmar" onclick="changePage()">
+        Confirmar
+    </button>
+    <script src="../JS/Senha.js"></script>
+</body>
