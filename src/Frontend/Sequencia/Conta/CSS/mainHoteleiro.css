@@ -37,10 +37,12 @@ align-items: center;
 .imgeye {
 display: flex;
 align-items: center;
-
+border-radius: 100%;
 }
 .eye {
 height: 50px;
+border-radius: 100%;
+cursor: pointer;
 }
 .value {
 font-size: 40px;
@@ -51,6 +53,7 @@ border-radius: 50px;
 border: 12px solid #3468FC;
 border-color: #8CAAFD;
 justify-content: center;
+align-items: center;
 cursor: text;
 margin-right: 80px;
 }

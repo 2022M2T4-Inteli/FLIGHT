@@ -3,14 +3,20 @@
     padding: 0;
 }
 header{
-    width: 100%;
-    background-color:#3468fc;
+    background-color: #3468fA;
+    height: 89px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 .left-arrow{
-    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 12.5px;
 }
 
-.valor{
+.value{
     margin-top: 4%;
     color: black;
     text-align: center;
@@ -101,11 +107,19 @@ header{
 
 }
 
-.texto_de_pagamento{
+.payment-text{
     margin-top: 40px;
     font-size: 28px;
     text-align: center;
     color:black;
+}
+.topBar{
+    background-color:#3468FC;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 89px;
+    
 }
 
 button{
@@ -126,7 +140,7 @@ label{
     color: #3468fc;
     font-size: 18px;
 }
-.formas_alinhadas {
+.aligned-shapes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,6 +161,9 @@ label{
 .finishbutton {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+.logo{
+    height: 80px;
 }
 @media only screen and (max-width: 768px){
     /*For mobile phones */
