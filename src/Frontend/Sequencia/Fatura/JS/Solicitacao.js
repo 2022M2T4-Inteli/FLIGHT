@@ -36,10 +36,10 @@ function keyUp() {
     let d2 = 12/100
         $('#valorEscolhido').keyup(function() {
             let currentValue = String(document.getElementById("valorEscolhido").value);
-            $("#label30").html("30 Dias (xx/xx/xx) - sem abatimento, valor final de R$" + String(currentValue));
-            $("#label15").html("15 Dias (xx/xx/xx) - descontados 6%, valor final de R$" + String((currentValue - currentValue*d15).toFixed(2)));
-            $("#label7").html("7 Dias (xx/xx/xx) - descontados 9%, valor final de R$" + String(currentValue - currentValue*d7.toFixed(2)));
-            $("#label2").html("2 Dias (xx/xx/xx) - descontados 12%, valor final de R$" + String(currentValue - currentValue*d2.toFixed(2)));
+            $("#label30").html("30 Dias - sem abatimento, valor final de R$" + String(currentValue));
+            $("#label15").html("15 Dias - descontados 6%, valor final de R$" + String((currentValue - currentValue*d15).toFixed(2)));
+            $("#label7").html("7 Dias - descontados 9%, valor final de R$" + String(currentValue - currentValue*d7.toFixed(2)));
+            $("#label2").html("2 Dias - descontados 12%, valor final de R$" + String(currentValue - currentValue*d2.toFixed(2)));
         });
     }
 
