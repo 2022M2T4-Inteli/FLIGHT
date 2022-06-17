@@ -108,17 +108,19 @@ A cada atualização os detalhes devem ser lançados aqui.
 * 0.4.0 - 29/05/2022
     * Update README.md;<br>
 * 0.5.0 - 01/06/2022
-    * Update WAD com Arquitetura da Solução; <br>
+    * Update WAD com Arquitetura da Solução;<br>
 * 0.6.0 - 10/06/2022
     * Update do README.md com correções ortográficas;<br>
 * 0.7.0 - 15/06/2022
-    * Atualização da API do Postman.<br>
+    * Atualização da API do Postman;<br>
 * 0.7.1 - 15/06/2022
-    *Representação da arquitetura da solução concluída no WAD.<br>
+    *Representação da arquitetura da solução concluída no WAD;<br>
  * 0.8.0 - 17/06/2022
-    * Add das legendas das imagens no WAD.<br>
+    * Add das legendas das imagens no WAD;<br>
  * 0.8.1 - 17/06/2022
-    * Add da Arquitetura da Solução com Heroku na pasta documento<br>
+    * Add da Arquitetura da Solução com Heroku na pasta documento;<br>
+ * 0.8.2 - 17/06/2022
+    * Add dos testes de Funcionalidade (preliminares);<br>
 
 ## 📋 Licença/License
 
