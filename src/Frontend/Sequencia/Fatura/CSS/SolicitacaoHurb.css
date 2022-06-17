@@ -5,7 +5,7 @@ body {
 
 .escrita{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 hr{
@@ -47,6 +47,8 @@ input[type="number"] {
     display: flex;
     margin-top: 20px;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 ::placeholder{
     color: black;
