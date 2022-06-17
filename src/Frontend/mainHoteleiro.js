@@ -42,10 +42,38 @@ function saiba_mais(){
 }
 
 function getAmount() {
+    let count = 0;
+    let match = false;
     $.get("http://127.0.0.1:3000/get-access", function(access) {
-        let logged = access[0].login_parceiro;
-        $.get("http://127.0.0.1:3000/users", function(users) {
-            
-        })})
-
+    let accessed = (access[0].login_parceiro);
+    console.log(accessed + " = login que acessou")
+    $.get("http://127.0.0.1:3000/users", function(users) {
+        console.log(users);
+        // fazer looping para verificar qual users[n].login é igual ao accessed (login do acesso mais recente)
+        var i = 0;
+        let found = false;
+        while (i < users.length && found == false) {
+            if (users[i].login == accessed) {
+                found = true;
+                var logged_id = (users[i].parceiro_id)
+                    console.log("deu certo até aqui")
+                $.get("http://127.0.0.1:3000/get-partners", function(partners) {
+                let j = 0;    
+                let match = false;
+                console.log(partners);
+                while (j < partners.length && match == false) {
+                    if (logged_id == partners[j].id) {
+                        match = true;
+                        console.log(logged_id + " " + partners[j].id + " é o que logou");
+                        console.log(partners[j].montante);
+                        $("#teste2").append(partners[j].montante)
+                    }
+                    j += 1;
+                }
+                })
+            }
+            i += 1;
+        }
+    })
+    })
     }
