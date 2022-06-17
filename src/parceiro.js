@@ -99,11 +99,39 @@ app.get('/get-ds', (req, res) => {
 	db.close(); // Fecha o banco
 });
 
+app.get('/get-logged-partner', (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+  var sql = 'SELECT * FROM CONTA LIMIT 99';
+	db.all(sql, [],  (err, rows ) => {
+		if (err) {
+		    throw err;
+		}
+		res.json(rows);
+	});
+	db.close(); // Fecha o banco
+});
+
 app.get('/get-access', (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
   var sql = 'SELECT * FROM ACESSO ORDER BY id DESC LIMIT 1';
+	db.all(sql, [],  (err, rows ) => {
+		if (err) {
+		    throw err;
+		}
+		res.json(rows);
+	});
+	db.close(); // Fecha o banco
+});
+
+app.get('/get-partners', (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+  var sql = 'SELECT * FROM PARCEIRO';
 	db.all(sql, [],  (err, rows ) => {
 		if (err) {
 		    throw err;
