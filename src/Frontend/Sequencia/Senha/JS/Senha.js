@@ -5,6 +5,17 @@ var valorEscolhido = sessionStorage.getItem("valorEscolhido");
 var resultado = sessionStorage.getItem("resultado");
 var api = 'http://127.0.0.1:3000'
 
+let otp = document.querySelector("#otp-input");
+
+for (let pin of otp.children) {
+  pin.onkeyup = function (event) {
+    if (event.target.value > 0)
+      if (pin.nextElementSibling) {
+        pin.nextElementSibling.focus();
+      }
+  };
+}
+
 function changePage(){
     window.location='../../Feedback/HTML/Feedback.html'
 }

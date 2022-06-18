@@ -9,17 +9,12 @@
     align-items: center;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 .quadrado {
+    display: flex;
+    justify-content: center;
     border: 2px solid #3468fA;
-    width: 50%;
-    min-width: 680px;
-    height: 200px;
+    width: 348.6px;
+    height: 84px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -56,24 +51,6 @@ input[type="number"]::-webkit-inner-spin-button {
 #title {
     font-size: 50px;
 }
-
-input {
-    display: inline-block;
-    margin: 1.2rem auto;
-    border: none;
-    padding: 0;
-    width: 6ch;
-    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/ 10ch 2px no-repeat;
-    font: 6.2rem 'Ubuntu Mono', monospace;
-    letter-spacing: 0.5ch;
-}
-
-
-input:focus {
-    outline: none;
-    color: #3468fA;
-}
-
 .coluna {
     width: 20%;
     justify-content: end;
@@ -86,7 +63,18 @@ input:focus {
     margin: auto;
 }
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 25px;
+    outline: none;
+}
 h1 {
     color: black;
 }
@@ -139,12 +127,8 @@ h1 {
     }
 
     input {
-        background-color: #8CAAFD;
-        border: 0;
-        border-radius: 10px;
-        height: 60px;
-        width: 60px;
-        font-size: 40px;
+        width: 80px;
+        height: 80px;
         text-align: center;
     }
 }
