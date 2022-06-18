@@ -1,25 +1,28 @@
+var currentVal = sessionStorage.getItem("currentVal");
+var logged_id = sessionStorage.getItem("logged_id");
+var regra = sessionStorage.getItem("regra");
+var valorEscolhido = sessionStorage.getItem("valorEscolhido");
+var resultado = sessionStorage.getItem("resultado");
+var d;
+
 function changePage(){
     window.location = '../../Senha/HTML/Senha.html';
 }
-
+function teste() {
+  console.log(currentVal + " " + logged_id + " " + regra + " " + valorEscolhido + " " + resultado)
+}
 function viewAnticipation() {
-    $.get("http://127.0.0.1:3000/anticipations", function(antecipacao) {
-      let valorRegra = Number(antecipacao[0].regraNegocio)
-        $("#choosen-value").html("R$ " +( antecipacao[0].montanteEscolhido).toFixed(2));
-       $("#final-value").html("R$ " + (antecipacao[0].discountedAnticipation).toFixed(2));
-       console.log(valorRegra)
-       if (valorRegra== 12) {
-        $("#ds").html("D+2");
-          console.log("2"); 
-       }
-        else if (valorRegra== 9) {
-            $("#ds").html("D+7");
+        if (regra == 12) {
+          d = '2'
         }
-        else if (valorRegra== 6) {
-            $("#ds").html("D+15")
+        else if (regra == 9) {
+          d = '7'
         }
-        else if (valorRegra== 0) {
-            $("#ds").html("D+30");
+        else if (regra == 6) {
+          d = '15'
+        }
+        else if (regra == 0) {
+          d = '30'
         }
         var data = new Date();
         var dia = data.getDate();
@@ -50,25 +53,9 @@ function viewAnticipation() {
               break;
             case 6:
               dianome = "Sábado";
-          }
-        $("#datenow").html(dia + "/" + (Number(mes)+1) + "/" + ano + " " + hora + ":" + min + ":" + seg + "<br>" + dianome)
-    });
-}
-
-function getUsers() {
-
-    $.get("http://127.0.0.1:3000/users", function(usuarios) {
-        
-    })
-}
-function getdata() {
-$.get("http://127.0.0.1:3000/whois", function(resultado){
-    //var objeto = JSON.stringify(resultado);
-    //var pa = JSON.parse(resultado[0]);
-    $("#nomeTB").html(resultado[0].Nome);
-    $("#idadeTB").html(resultado[0].Idade);
-    $("#enderecoTB").html(resultado[0].Endereco);
-    $("#belezaTB").html(resultado[0].Beleza);
-    getUsers();
-});
+        }
+        $("#datenow").html(`${dia}/${mes}/${ano} - ${dianome}`);
+        $("#ds").html(`D+${d} (${regra}%)`);
+        $("#choosen-value").html(`R$ ${valorEscolhido}`);
+        $("#final-value").html(`R$ ${resultado}`)
 }

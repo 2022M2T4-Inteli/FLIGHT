@@ -302,14 +302,16 @@ hr {
 
 .input-style {
 
-    font-size: larger;
     border-radius: 7px;
     align-content: center;
     color: black;
     margin-bottom: 15px;
     width: 40%;
-    height: 50%;
     max-width: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: medium;
+    text-align: center;
+    height: 30px;
 
 }
 #ForgotPassword {

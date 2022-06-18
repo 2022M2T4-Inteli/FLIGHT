@@ -1,8 +1,7 @@
 var api = 'http://127.0.0.1:3000'
-var resultado
 var regra = 0;
-var valorEscolhido
-var dia
+var valorEscolhido;
+var dia;
 // Muda a tela para a página seguinte (Demonstrativo)
 function changeScreen() {
     window.location = "../../Demonstrativo/HTML/Solicitacao-Demonstrativo.html"
@@ -11,23 +10,35 @@ function changeScreen() {
 
 function confirm(){
     valorEscolhido = Number(document.getElementById("valorEscolhido").value);
+    sessionStorage.setItem("valorEscolhido", valorEscolhido);
+    console.log(valorEscolhido)
     dia = Number($('input[name="d"]:checked').val());
     if (dia == 2) {
         regra = 12;
+        sessionStorage.setItem("regra", regra);  
+
     }
     else if (dia == 7) {
         regra = 9;
+        sessionStorage.setItem("regra", regra);  
+
     }
     else if (dia == 15) {
         regra = 6;
+        sessionStorage.setItem("regra", regra);  
+
     }
     else if (dia == 30) {
         regra = 0;
+        sessionStorage.setItem("regra", regra);  
+
     }
     resultado = valorEscolhido-regra/100*valorEscolhido;
-    console.log("A")
-    console.log(dia + " dia" + "<br>" + regra + " regra")
-    insert();
+    sessionStorage.setItem("resultado", resultado);  
+    console.log(resultado)
+    console.log(dia + " dia" + "<br>" + regra + " regra");
+    console.log(regra)
+    changeScreen()
 }
 // Atualiza em tempo real os valores descontados
 function keyUp() { 
@@ -43,17 +54,4 @@ function keyUp() {
         });
     }
 
-// Dá o post via ajax e salva a requisição na tabela ANTECIPACAO e chama a função para rodar a tela seguinte
-function insert() {
-    $.ajax({
-        type: 'POST',
-        url: api + '/register',
-        data: {
-            montanteEscolhido:valorEscolhido,
-            regraNegocio:regra,
-            parceiroId:14,
-            discountedAnticipation:resultado
-        }
-    })
-    changeScreen();
-}
+

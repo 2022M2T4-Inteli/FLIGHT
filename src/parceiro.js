@@ -111,6 +111,20 @@ app.get('/get-partners', (req, res) => {
 		res.json(rows);
 	});
 	db.close(); // Fecha o banco
+}); 
+
+app.post('/update-amount', urlencodedParser, (req, res) => {
+	res.statusCode = 200;	
+	//res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
+	sql = "UPDATE PARCEIRO SET montante = '" + req.body.montante + "' WHERE id = " + req.body.id;
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+	db.run(sql, [],  err => {
+		if (err) {
+		    throw err;
+		}
+		res.end();
+	});
+	db.close(); // Fecha o banco
 });
 
 app.get('/get-access', (req, res) => {

@@ -66,7 +66,12 @@ function getAmount() {
                         match = true;
                         console.log(logged_id + " " + partners[j].id + " é o que logou");
                         console.log(partners[j].montante);
-                        $("#teste2").append(partners[j].montante)
+                        $("#teste2").append(partners[j].montante);
+                        var currentVal = partners[j].montante;
+                        console.log(currentVal)
+                        sessionStorage.setItem("currentVal", currentVal);
+                        var id_user = logged_id;
+                        sessionStorage.setItem("logged_id", logged_id);
                     }
                     j += 1;
                 }
@@ -76,4 +81,5 @@ function getAmount() {
         }
     })
     })
+
     }
