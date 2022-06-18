@@ -55,8 +55,8 @@ function getAmount() {
         while (i < users.length && found == false) {
             if (users[i].login == accessed) {
                 found = true;
-                var logged_id = (users[i].parceiro_id)
-                    console.log("deu certo até aqui")
+                var logged_id = (users[i].hotel_id)
+                    console.log("deu certo até aqui" + logged_id)
                 $.get("http://127.0.0.1:3000/get-partners", function(partners) {
                 let j = 0;    
                 let match = false;
@@ -72,6 +72,8 @@ function getAmount() {
                         sessionStorage.setItem("currentVal", currentVal);
                         var id_user = logged_id;
                         sessionStorage.setItem("logged_id", logged_id);
+                        console.log("TESTE")
+                        console.log(users[logged_id].hotel_id)
                     }
                     j += 1;
                 }
