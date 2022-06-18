@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .background {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.quadrado{
+
+.quadrado {
     border: 2px solid #3468fA;
     width: 50%;
     min-width: 680px;
@@ -21,28 +24,26 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 100px;
 }
 
-.escrita{
+.written {
     text-align: center;
     color: white;
     font-size: 36px;
 }
 
-.digitos{
+.keys {
     text-align: center;
     font-size: 64px;
 }
 
-.dBox1{
-    background-color: #8CAAFD;
-    border: 0;
-   border-radius: 25px;
-   height: 80px;
-   width: 80px;
-   font-size: 40px;
-   text-align: center;
+.keys form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-input{
+.dBox1 {
     background-color: #8CAAFD;
     border: 0;
     border-radius: 25px;
@@ -51,24 +52,46 @@ input{
     font-size: 40px;
     text-align: center;
 }
-.coluna{
+
+#title {
+    font-size: 50px;
+}
+
+input {
+    display: inline-block;
+    margin: 1.2rem auto;
+    border: none;
+    padding: 0;
+    width: 6ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/ 10ch 2px no-repeat;
+    font: 6.2rem 'Ubuntu Mono', monospace;
+    letter-spacing: 0.5ch;
+}
+
+
+input:focus {
+    outline: none;
+    color: #3468fA;
+}
+
+.coluna {
     width: 20%;
-    justify-content:end;
+    justify-content: end;
 }
 
-.numbers{
+.numbers {
 
-  height: 50px;
-  justify-content: center;
-  margin: auto;
+    height: 50px;
+    justify-content: center;
+    margin: auto;
 }
 
 
-h1{
+h1 {
     color: black;
 }
 
-.confirmar{
+.confirmar {
     border: 1px solid #8CAAFD;
     background-color: #8CAAFD;
     border-radius: 100px;
@@ -78,10 +101,10 @@ h1{
     height: 80px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     /*For mobile phones */
 
-    .confirmar{
+    .confirmar {
         border: 1px solid #8CAAFD;
         background-color: #8CAAFD;
         border-radius: 100px;
@@ -91,22 +114,22 @@ h1{
         height: 50px;
     }
 
-    .escrita{
-         color: #3468fA;
-         font-size: 20px;
-         text-align: center;
+    .escrita {
+        color: #3468fA;
+        font-size: 20px;
+        text-align: center;
     }
-    
-     h1{
-         color: black;
+
+    h1 {
+        color: black;
     }
-    
-    .digitos{
+
+    .keys {
         text-align: center;
         font-size: 4px;
     }
-    
-    .dBox1{
+
+    .dBox1 {
         background-color: #8CAAFD;
         border-radius: 10px;
         height: 60px;
@@ -114,8 +137,8 @@ h1{
         font-size: 40px;
         text-align: center;
     }
-    
-        input{
+
+    input {
         background-color: #8CAAFD;
         border: 0;
         border-radius: 10px;
@@ -123,5 +146,5 @@ h1{
         width: 60px;
         font-size: 40px;
         text-align: center;
-}
+    }
 }

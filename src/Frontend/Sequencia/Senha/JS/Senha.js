@@ -27,7 +27,7 @@ function insert() {
     })
     update();
 }
-    
+
 function update() {
     let discounted = currentVal-valorEscolhido;
     $.ajax({
