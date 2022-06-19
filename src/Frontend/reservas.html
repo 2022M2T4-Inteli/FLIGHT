@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../global/global.css">
-    <link rel="stylesheet" href="reservas.css">
+    <script src = "Sequencia/reservas/reservas.js"></script>
+    <link rel="stylesheet" href="Sequencia/reservas/reservas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
+<body onload = "getReserves()">
     <header>
         <div class = "topBar">
             <div class = "leftSide">
@@ -28,36 +30,23 @@
                 <th>Valor</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <td><input type = "checkbox" id = "select-all"></td>
-                <td>0</td>
-                <td>12/12/2022</td>
-                <td>R$ 2400</td>
-            </tr>
-       
-            <tr>
-                <td><input type = "checkbox"></td>
-                <td>1</td>
-                <td>12/12/2022</td>
-                <td>R$ 2400</td>
-            </tr>
-            <tr>
-                <td><input type = "checkbox"></td>
-                <td>1</td>
-                <td>12/12/2022</td>
-                <td>R$ 2400</td>
-            </tr>
-            <tr>
-                <td><input type = "checkbox"></td>
-                <td>1</td>
-                <td>12/12/2022</td>
-                <td>R$ 2400</td>
-            </tr>
+            <tbody id = "tbody">
+                <tr>
+                    <td><input type = "checkbox" id = "select-all" onclick = "selectAll()"></td>
+                </tr>
             </tbody>
         </table>
-                </div>
-            </header>
-    </body>
+            <div class="choose-option">
+                <select>
+                    <option>Selecione um modelo</option>
+                    <option>D+ 2</option>
+                    <option>D+ 7</option>
+                    <option>D+ 15</option>
+                    <option>D+ 30</option>
+                </select>
+            </div>
+            <div class="button-div">
+                <button class="button" onclick = "gotodemonstrativo()">Confirmar</button>
+            </div>
 </body>
 </html>

@@ -6,7 +6,7 @@ var api = 'http://127.0.0.1:3000';
 
 
 function signup() {
-    window.location = ''
+    window.location = '../cadastro.html'
 }
 function getUsers() {
     login = $("#login").val();

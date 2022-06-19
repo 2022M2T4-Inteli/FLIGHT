@@ -1,19 +1,5 @@
-var texto_original = "**********";
-function openEye(){
-    if(document.getElementById("teste").src=="http://127.0.0.1:5501/olho_aberto2.png")
-    {
-        console.log("passei aqui!");
-        document.getElementById("teste").src = "olho_fechado.png";
-        texto_original=document.getElementById("teste2").innerText;
-        document.getElementById("teste2").innerText = "*******";
-    }
-    else
-    {
-        document.getElementById("teste").src = "olho_aberto2.png";
-        document.getElementById("teste2").innerText = texto_original;
-    }
-   
-}
+var currentVal
+var partn
 function openMenu() {
     window.location = 'Sequencia/MenuHoteleiro/HTML/menu.html'
 }
@@ -23,11 +9,11 @@ function menu(){
 }
 
 function antecipe_seus_ganhos(){
-    window.location= 'Sequencia/Fatura/HTML/SolicitacaoHurb.html'
+    window.location= 'Sequencia/opcaoAntecipacao/html/opcaoAntecipacao.html'
 }
 
 function antecipacao_automatica(){
-    window.location= 'Sequencia/Agendamento/HTML/Agendamento.html'
+    window.location= 'reservas.html'
 }
 
 function extrato(){
@@ -55,7 +41,7 @@ function getAmount() {
         while (i < users.length && found == false) {
             if (users[i].login == accessed) {
                 found = true;
-                var logged_id = (users[i].hotel_id)
+                var logged_id = (users[i].hotel_cnpj)
                     console.log("deu certo até aqui" + logged_id)
                 $.get("http://127.0.0.1:3000/get-partners", function(partners) {
                 let j = 0;    
@@ -65,15 +51,15 @@ function getAmount() {
                     if (logged_id == partners[j].id) {
                         match = true;
                         console.log(logged_id + " " + partners[j].id + " é o que logou");
-                        console.log(partners[j].montante);
+                        part = (partners[j].montante);
                         $("#teste2").append(partners[j].montante);
-                        var currentVal = partners[j].montante;
+                        currentVal = partners[j].montante;
                         console.log(currentVal)
                         sessionStorage.setItem("currentVal", currentVal);
-                        var id_user = logged_id;
                         sessionStorage.setItem("logged_id", logged_id);
                         console.log("TESTE")
-                        console.log(users[logged_id].hotel_id)
+                        var logged_hotel = (users[logged_id].hotel_cnpj)
+                        sessionStorage.setItem("logged_hotel", logged_hotel);
                     }
                     j += 1;
                 }
@@ -85,3 +71,20 @@ function getAmount() {
     })
 
     }
+function eyeMode() {
+    if(document.getElementById('eyeimg').src == 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png') {
+        document.getElementById('eyeimg').src = 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_fechado.png'
+        let i = 0;
+        let stringPart = String(part).length
+        console.log(stringPart)
+        $('#teste2').html('R$ ');
+        while (i<stringPart) {
+            $('#teste2').append('*');
+            i +=1
+        }
+    }
+    else {
+        document.getElementById('eyeimg').src = 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png'
+        $('#teste2').html(`R$ ${currentVal}`)
+    }
+}

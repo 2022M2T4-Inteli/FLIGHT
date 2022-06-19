@@ -1,10 +1,16 @@
 
+// Check se os valores da etapa 1 da inscrição são válidos (LOGIN e PIN)
 function check() {
-    var loginValue = document.getElementById('login').value
-    var passValue = document.getElementById('pass').value
-    var confirmPassValue = document.getElementById('confirm-pass').value
+    var loginVal = $('#login').value
+    var pinVal = $('#pass').value
+    var confirmPinVal = $('#confirm-pass').value
+    console.log(loginVal + " " + pinVal + " " + confirmPinVal)
 
-    if (loginValue == "") {
-        document.getElementById('login').style += ''
-    }
+
+
+
+
+
+
+    window.location = 'cadastro2.html'
 }

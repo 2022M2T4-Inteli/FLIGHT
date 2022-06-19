@@ -42,6 +42,12 @@
 input:placeholder-shown {
     text-align: center;
 }
+.confirm-button {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 55%;
+}
 .button {
     border: 1;
     margin-top: 10px;
@@ -56,15 +62,12 @@ input:placeholder-shown {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    width: 100%;
+    width: 80%;
   }
-  .button-div {
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  #back {
+    margin-left: 8px;
   }
+
   .button:hover {background-color: black; color:white}
   
   .button:active {

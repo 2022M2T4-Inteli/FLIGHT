@@ -36,23 +36,33 @@ align-items: center;
 }
 .imgeye {
 display: flex;
+justify-content: center;
 align-items: center;
+width: 30%;
 
 }
 .eye {
-height: 50px;
+width: 100px;
+margin-right: 20px;
+cursor: pointer;
+}
+.eye:hover {
+width: 110px;
+margin-right: 18px;
 }
 .value {
 font-size: 40px;
 display: flex;
-width: 40%;
-height: 80px;
+width: 60%;
+height: 70px;
 border-radius: 50px;
 border: 12px solid #3468FC;
 border-color: #8CAAFD;
 justify-content: center;
 cursor: text;
 margin-right: 80px;
+text-align: center;
+align-items: center;
 }
 
 
@@ -76,8 +86,6 @@ align-items: center;
 display: flex;
 width: 100%;
 justify-content: center;
-margin-right: 15px;
-margin-top: 50px;
 }
 .midButton1 {
 height: 80px;
