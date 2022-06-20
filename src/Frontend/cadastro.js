@@ -1,4 +1,4 @@
-
+var api = 'http://127.0.0.1:3000'
 // Check se os valores da etapa 1 da inscrição são válidos (LOGIN e PIN)
 function check() {
     
@@ -55,20 +55,45 @@ function saveData2() {
             cnpjNot14char()
         }
         else {
-            cnpjVal = ($("#cnpj").val())
-            getConfirmEmail()
+          cnpjVal = ($("#cnpj").val())
+          email = $("#email").val()
+          postAll()
         }
+      }
+      else {
+        
+      }
     }
-    else {
-
-    }
+    
+    function postAll() {
+  var loginVal = sessionStorage.getItem("loginVal")
+  var pinVal = sessionStorage.getItem("pinVal")
+  if ($('#email').val() == $('#confirm-email').val()) {
+    console.log(pinVal)
+    {
+      $.ajax({
+          type: 'POST',
+          url: api + '/save-new-hotel',
+          data: {
+              login:loginVal,
+              senha:pinVal,
+              email:email,
+              hotel_cnpj:cnpjVal
+          }
+      })
+  } 
+  }
+  successRegisterToast()
 }
 
-function getConfirmEmail() {
-      email = $("#email").val()
-      console.log(email)  
+function successRegisterToast() {
+  toast({
+    title: "Sucesso!",
+    message: "Cadastro criado com sucesso.",
+    type: "success",
+    duration: 5000
+  });
 }
-
 // Toast CNPJ não tem 14 caracteres (apenas números)
 function cnpjNot14char() {
     toast({
@@ -125,6 +150,10 @@ function loginAlreadyExistsToast() {
       duration: 5000
     });
   }
+
+
+
+
 
 //   IGNORAR
   // Função do Toast

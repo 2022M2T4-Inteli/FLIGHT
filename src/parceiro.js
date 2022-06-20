@@ -30,7 +30,7 @@ app.post('/createpartner', urlencodedParser, (req, res) => {
 app.post('/register', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
-	sql = "INSERT INTO ANTECIPACAO (montanteEscolhido, regraNegocio, hotelCnpj, discountedAnticipation, data) VALUES ('" + req.body.montanteEscolhido + "', '" + req.body.regraNegocio + "', '" + req.body.hotelCnpj +  "', '" + req.body.discountedAnticipation + "', '" + req.body.data +  "')";
+	sql = "INSERT INTO ANTECIPACAO (montanteEscolhido, regraNegocio, hotelCnpj, discountedAnticipation, data) VALUES ('" + req.body.montanteEscolhido + "', '" + req.body.regraNegocio + "', '" + req.body.hotelCnpj +  "', '" + req.body.discountedAnticipation + "', '" + req.body.hotelCnpj +  "')";
 	console.log(sql);
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
 	db.all(sql, [],  err => {
@@ -143,10 +143,10 @@ app.get('/get-reserves', (req, res) => {
 	db.close(); // Fecha o banco
 });
 
-app.post('/save-new-partner', urlencodedParser, (req, res) => {
+app.post('/save-new-hotel', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
-	sql = "INSERT INTO CONTA (login, senha, email, parceiro_id) VALUES ('" + req.body.login + "', '" + req.body.senha + "', '" + req.body.email + "' , '" + req.body.parceiro_id + "')";
+	sql = "INSERT INTO CONTA (login, senha, email, hotel_cnpj) VALUES ('" + req.body.login + "', '" + req.body.senha + "', '" + req.body.email + "' , '" + req.body.hotel_cnpj + "')";
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
 	db.run(sql, [],  err => {
 		if (err) {

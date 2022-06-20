@@ -17,15 +17,17 @@ function getUsers() {
     while (i < users.length) {
     if (users[i].login == login) {
         if (users[i].senha == pass) {
-            alert("Login efetuado com sucesso");
             logged = true;  
-            postAcess();
         }
     }
     i += 1;    
 }
-    if (logged == false) {
-        alert("Login ou senha inválidos");
+if (logged == false) {
+    alert("Login ou senha inválidos");
+}
+else {
+        toastLoginSucces();
+        postAcess();
     }
     })
 }
@@ -44,3 +46,49 @@ function postAcess() {
 function changePage() {
     window.location = "../antecipe.html"
 }
+function toastLoginSucces() {
+    toast({
+      title: "Sucesso!",
+      message: "Você efetuou login no sistema.",
+      type: "success",
+      duration: 5000
+    });
+  }
+
+ // Função do Toast
+ function toast({ title = "", message = "", type = "info", duration = 3000 }) {
+    const main = document.getElementById("toast");
+    if (main) {
+      const toast = document.createElement("div");
+  
+      // Toast sair por si só
+      const autoRemoveId = setTimeout(function () {
+        main.removeChild(toast);
+      }, duration + 1000);
+  
+      const icons = {
+        error: "fas fa-exclamation-circle"
+      };
+      const icon = icons[type];
+      const delay = (duration / 1000).toFixed(2);
+  
+      toast.classList.add("toast", `toast--${type}`);
+      toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`;
+  
+      toast.innerHTML = `
+                      <div class="toast__icon">
+                          <i class="${icon}"></i>
+                      </div>
+                      <div class="toast__body">
+                          <h3 class="toast__title">${title}</h3>
+                          <p class="toast__msg">${message}</p>
+                      </div>
+                      <div class="toast__close">
+                          <i class="fas fa-times"></i>
+                      </div>
+                  `;
+      main.appendChild(toast);
+      $("#valorEscolhido").val('')
+    }
+  }
+  
