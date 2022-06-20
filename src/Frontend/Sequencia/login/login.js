@@ -12,6 +12,8 @@ function getUsers() {
     login = $("#login").val();
     pass = $("#pass").val();
     $.get("http://127.0.0.1:3000/users", function(users) {
+    var userslist = sessionStorage.setItem("userslist", users)
+    console.log(userslist)
     while (i < users.length) {
     if (users[i].login == login) {
         if (users[i].senha == pass) {

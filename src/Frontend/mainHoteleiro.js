@@ -13,7 +13,7 @@ function antecipe_seus_ganhos(){
 }
 
 function antecipacao_automatica(){
-    window.location= 'reservas.html'
+    window.location= 'Sequencia/Agendamento/HTML/Agendamento.html'
 }
 
 function extrato(){
@@ -70,7 +70,6 @@ function getAmount() {
         }
     })
     })
-
     }
 function eyeMode() {
     if(document.getElementById('eyeimg').src == 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png') {

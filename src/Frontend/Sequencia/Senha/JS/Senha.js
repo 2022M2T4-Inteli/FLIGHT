@@ -4,6 +4,7 @@ var regra = sessionStorage.getItem("regra");
 var valorEscolhido = sessionStorage.getItem("valorEscolhido");
 var resultado = sessionStorage.getItem("resultado");
 var api = 'http://127.0.0.1:3000'
+var users = sessionStorage.getItem("userslist")
 
 let otp = document.querySelector("#otp-input");
 
@@ -21,7 +22,17 @@ function changePage(){
 }
 
 function confirmProcess(){
-    console.log(valorEscolhido)
+    var a = 1;
+    var entryPass = ''
+    while (a<=4) {
+        entryPass += (Number($(`#part-code${a}`).val()))
+        console.log(entryPass)
+        a += 1;
+    }
+    // if (entryPass == users[logged_id].senha) {
+    //     console.log("logou")
+    // }
+    console.log (users)
     insert()
 }
     // Dá o post via ajax e salva a requisição na tabela ANTECIPACAO e chama a função para rodar a tela seguinte

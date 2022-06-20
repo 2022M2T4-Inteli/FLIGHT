@@ -68,10 +68,10 @@ input:placeholder-shown {
     margin-left: 8px;
   }
 
-  .button:hover {background-color: black; color:white}
+  .button:hover {background-color: #8CAAFD; color:white}
   
   .button:active {
-    background-color: black;
+    background-color: #8CAAFD;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
