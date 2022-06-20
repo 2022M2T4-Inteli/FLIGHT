@@ -29,9 +29,9 @@ Nossa solução é a criação de uma plataforma web para os hoteleiros parceiro
 
 
 ## 🛠 Estrutura de pastas
-Documentos
-<p>Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
-  |-->antigos<br>
+Documentos<br>
+Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
+  &emsp;&emsp;|-->antigos<br>
   Análise de Risco - Sist. Antecipação -HURB - Sheet1.pdf<br>
   Arquitetura da Solução.pdf<br>
   Modelo Conceitual de Banco de Dados v2.0.pdf<br>
@@ -41,14 +41,14 @@ Documentos
   WAD - Documento Aplicação Web.pdf<br>
 
 Imagens<br>
-  <p> Aqui você encontrará todas as imagens do projeto, juntamente com os ícones utilizados<br>
-  |-->Ícone Utilizados<br>
+Aqui você encontrará todas as imagens do projeto, juntamente com os ícones utilizados<br>
+  &emsp;&emsp;|-->Ícone Utilizados<br><br>
 src<br>
-    <p> Aqui você encontrará o código fonte do projeto.<br>
-  |-->BACK-END<br>
-  |-->FRON-END<br>
-readme.md<br>
-licença.txt <br>
+Aqui você encontrará o código fonte do projeto.<br>
+  &emsp;&emsp;|-->BACK-END<br>
+  &emsp;&emsp;|-->FRON-END<br>
+Readme.md<br>
+Licença.txt <br>
 
 ## 🛠 Instalação
 
