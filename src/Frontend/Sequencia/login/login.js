@@ -4,7 +4,7 @@ var i = 0;
 var logged = false;
 var api = 'http://127.0.0.1:3000';
 
-
+var userslist
 function signup() {
     window.location = '../cadastro.html'
 }
@@ -12,8 +12,8 @@ function getUsers() {
     login = $("#login").val();
     pass = $("#pass").val();
     $.get("http://127.0.0.1:3000/users", function(users) {
-    var userslist = sessionStorage.setItem("userslist", users)
-    console.log(userslist)
+    userslist = sessionStorage.setItem("userslist", users)
+    console.log(users)
     while (i < users.length) {
     if (users[i].login == login) {
         if (users[i].senha == pass) {

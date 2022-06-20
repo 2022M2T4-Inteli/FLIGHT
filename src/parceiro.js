@@ -9,7 +9,7 @@ const hostname = '127.0.0.1';
 const DBPATH = 'dbHURB.db';
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("Frontend"));
+app.use(express.static("frontend"));
 
 // Adicionar um parceiro com seu nome e montante total(que vai ser calculado automaticamente e não manualmente, e atualizado em tempo real)
 app.post('/createpartner', urlencodedParser, (req, res) => {
@@ -30,7 +30,7 @@ app.post('/createpartner', urlencodedParser, (req, res) => {
 app.post('/register', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
-	sql = "INSERT INTO ANTECIPACAO (montanteEscolhido, regraNegocio, parceiroId, discountedAnticipation) VALUES ('" + req.body.montanteEscolhido + "', '" + req.body.regraNegocio + "', '" + req.body.parceiroId +  "', '" + req.body.discountedAnticipation + "')";
+	sql = "INSERT INTO ANTECIPACAO (montanteEscolhido, regraNegocio, hotelCnpj, discountedAnticipation, data) VALUES ('" + req.body.montanteEscolhido + "', '" + req.body.regraNegocio + "', '" + req.body.hotelCnpj +  "', '" + req.body.discountedAnticipation + "', '" + req.body.data +  "')";
 	console.log(sql);
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
 	db.all(sql, [],  err => {
@@ -46,7 +46,7 @@ app.get('/anticipations', (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
-  var sql = 'SELECT * FROM ANTECIPACAO ORDER BY id DESC LIMIT 1';
+  var sql = 'SELECT * FROM ANTECIPACAO ORDER BY id DESC';
 	db.all(sql, [],  (err, rows ) => {
 		if (err) {
 		    throw err;
@@ -55,6 +55,7 @@ app.get('/anticipations', (req, res) => {
 	});
 	db.close(); // Fecha o banco
 });
+
 
 app.get('/users', (req, res) => {
 	res.statusCode = 200;
@@ -85,11 +86,12 @@ app.get('/get-ds', (req, res) => {
 	db.close(); // Fecha o banco
 });
 
-app.get('/get-partners', (req, res) => {
+
+app.get('/get-hotels', (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
-  var sql = 'SELECT * FROM PARCEIRO';
+  var sql = 'SELECT * FROM HOTEL';
 	db.all(sql, [],  (err, rows ) => {
 		if (err) {
 		    throw err;
@@ -102,7 +104,7 @@ app.get('/get-partners', (req, res) => {
 app.post('/update-amount', urlencodedParser, (req, res) => {
 	res.statusCode = 200;	
 	//res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
-	sql = "UPDATE PARCEIRO SET montante = '" + req.body.montante + "' WHERE id = " + req.body.id;
+	sql = "UPDATE HOTEL SET montante = '" + req.body.montante + "' WHERE cnpj = " + req.body.cnpj;
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
 	db.run(sql, [],  err => {
 		if (err) {

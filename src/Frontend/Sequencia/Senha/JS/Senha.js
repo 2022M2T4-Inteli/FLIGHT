@@ -1,5 +1,5 @@
 var currentVal = sessionStorage.getItem("currentVal");
-var logged_id = sessionStorage.getItem("logged_id");
+var logged_cnpj = sessionStorage.getItem("logged_cnpj");
 var regra = sessionStorage.getItem("regra");
 var valorEscolhido = sessionStorage.getItem("valorEscolhido");
 var resultado = sessionStorage.getItem("resultado");
@@ -29,7 +29,7 @@ function confirmProcess(){
         console.log(entryPass)
         a += 1;
     }
-    // if (entryPass == users[logged_id].senha) {
+    // if (entryPass == users[logged_cnpj].senha) {
     //     console.log("logou")
     // }
     console.log (users)
@@ -37,14 +37,33 @@ function confirmProcess(){
 }
     // Dá o post via ajax e salva a requisição na tabela ANTECIPACAO e chama a função para rodar a tela seguinte
 function insert() {
+    const Ndate = new Date()
+    var dia = Ndate.getDate()
+    var mes = Ndate.getMonth()
+    var year = Ndate.getFullYear()
+    var dataDMA = (`${dia}/` + (Number(mes)+1) + `/${year}`)
+    var d
+    if (regra == 6) {
+        d = 15
+    }
+    else if (regra == 9) {
+        d = 7
+    }
+    else if (regra == 12) {
+        d = 2
+    }
+    else {
+        d = 30
+    }
     $.ajax({
         type: 'POST',
         url: api + '/register',
         data: {
             montanteEscolhido:valorEscolhido,
-            regraNegocio:regra,
-            parceiroId:logged_id,
-            discountedAnticipation:resultado
+            regraNegocio:d,
+            hotelCnpj:logged_cnpj,
+            discountedAnticipation:resultado,
+            data:dataDMA
         }
     })
     update();
@@ -55,7 +74,7 @@ function update() {
     $.ajax({
         type: 'POST',
         url: api + '/update-amount',
-        data: {montante:discounted, id:logged_id},
+        data: {montante:discounted, cnpj:logged_cnpj},
     })
     currentVal = discounted
     sessionStorage.setItem("currentVal", currentVal);

@@ -83,12 +83,6 @@ header{
     text-align: center;
     margin-top: 10px;
 }
-.column-2{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
 .rule{
     background-color:#CFFCE2;
     padding: 15px;

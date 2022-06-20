@@ -1,5 +1,5 @@
 var currentVal = sessionStorage.getItem("currentVal");
-var logged_id = sessionStorage.getItem("logged_id");
+var logged_cnpj = sessionStorage.getItem("logged_cnpj");
 var regra = sessionStorage.getItem("regra");
 var valorEscolhido = sessionStorage.getItem("valorEscolhido");
 var resultado = sessionStorage.getItem("resultado");
@@ -9,7 +9,7 @@ function changePage(){
     window.location = '../../Senha/HTML/Senha.html';
 }
 function teste() {
-  console.log(currentVal + " " + logged_id + " " + regra + " " + valorEscolhido + " " + resultado)
+  console.log(currentVal + " " + logged_cnpj + " " + regra + " " + valorEscolhido + " " + resultado)
 }
 function viewAnticipation() {
         if (regra == 12) {
