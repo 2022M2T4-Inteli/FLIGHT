@@ -29,38 +29,30 @@ Nossa solução é a criação de uma plataforma web para os hoteleiros parceiro
 
 
 ## 🛠 Estrutura de pastas
+Documentos
+<p>Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
+  |-->antigos<br>
+  Análise de Risco - Sist. Antecipação -HURB - Sheet1.pdf<br>
+  Arquitetura da Solução.pdf<br>
+  Modelo Conceitual de Banco de Dados v2.0.pdf<br>
+  Modelo Lógico de Banco de Dados v1.0.pdf<br>
+  Registro dos testes de Funcionalidades.pdf<br>
+  Style Guide - F.L.I.G.H.T..pdf<br>
+  WAD - Documento Aplicação Web.pdf<br>
 
-    📦Projeto 4
-<br>
-    📎 Documentos
-        <p>Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
-          &emsp;|-->antigos<br>
-          &emsp;WAD - Documento Aplicação Web.pdf<br>
-📷imagens<br>
-  &emsp;📁|-->Ícone Utilizados<br>
-💾src<br>
-  &emsp;📁|-->BACK-END<br>
-  &emsp;📁|-->FRON-END<br>
-📄readme.md<br>
-📜licença.txt <br>
-
-
-<br>
-A pasta raiz contem dois arquivos que devem ser alterados:
-
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
-
-Há também 3 pastas que seguem da seguinte forma:
-
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
-
-<b>imagens</b>: Algumas imagens do sistema e logos prontos para serem utilizados e visualizados.
-
-<b>src</b>: Nesta pasta irá todo o código fonte do sistema, pronto para para ser baixado e modificado. Existem duas pastas, <b>Backend</b> e <b>Frontend</b> que devem conter, respectivamente, o código do servidor e o código da página web.
+Imagens<br>
+  <p> Aqui você encontrará todas as imagens do projeto, juntamente com os ícones utilizados<br>
+  |-->Ícone Utilizados<br>
+src<br>
+    <p> Aqui você encontrará o código fonte do projeto.<br>
+  |-->BACK-END<br>
+  |-->FRON-END<br>
+readme.md<br>
+licença.txt <br>
 
 ## 🛠 Instalação
 
-Caso quiser mexer no nosso site vai ser necesário fazer a configuração do ambiente. Rode no terminal do VS-code os seguintes comandos:
+Caso quiser  atualizar no nosso site vai ser necesário fazer a configuração do ambiente. Rode no terminal do VS-code os seguintes comandos:
 ```sh
 npm start
 npm install sqlite3
@@ -121,6 +113,8 @@ A cada atualização os detalhes devem ser lançados aqui.
     * Add da Arquitetura da Solução com Heroku na pasta documento;<br>
  * 0.8.2 - 17/06/2022
     * Add dos testes de Funcionalidade (preliminares);<br>
+ * 0.9.1 - 20/06/2022
+    * Organização das pastas documentos e update da estrutura de pastas do README.md<br> 
 
 ## 📋 Licença/License
 
