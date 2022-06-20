@@ -67,7 +67,7 @@ function notEnoughMoney() {
       duration: 5000
     });
   }
-//   Toas para campo vazio
+//   Toast para campo vazio
   function emptyField() {
     toast({
       title: "Campo vazio!",

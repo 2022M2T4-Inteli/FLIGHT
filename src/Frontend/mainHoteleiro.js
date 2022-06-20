@@ -26,28 +26,28 @@ function configuracoes(){
 function saiba_mais(){
     window.location= 'file:///C:/Users/Inteli/Desktop/DESENVOLVIMENTO%20WEB/NOVAS%20TELAS%20-%20DAYLLAN/Apresenta%C3%A7%C3%A3o/2.%20HOTEL.HENRI%20-%20Menu.Hoteleiro/HTML/tela%20de%20cadastro.html'
 }
-
+var logged_id
+var logged_hotel
 function getAmount() {
-    let count = 0;
-    let match = false;
     $.get("http://127.0.0.1:3000/get-access", function(access) {
     let accessed = (access[0].login_parceiro);
-    console.log(accessed + " = login que acessou")
+    console.log(accessed + " = login que acessou");
     $.get("http://127.0.0.1:3000/users", function(users) {
         console.log(users);
         // fazer looping para verificar qual users[n].login é igual ao accessed (login do acesso mais recente)
-        var i = 0;
+        let i = 0;
         let found = false;
         while (i < users.length && found == false) {
             if (users[i].login == accessed) {
                 found = true;
-                var logged_id = (users[i].hotel_cnpj)
-                    console.log("deu certo até aqui" + logged_id)
+                logged_id = (users[i].id)
+                console.log(logged_id);
                 $.get("http://127.0.0.1:3000/get-partners", function(partners) {
                 let j = 0;    
                 let match = false;
                 console.log(partners);
                 while (j < partners.length && match == false) {
+                    console.log(logged_id + " " + partners[j].id)
                     if (logged_id == partners[j].id) {
                         match = true;
                         console.log(logged_id + " " + partners[j].id + " é o que logou");
@@ -58,7 +58,8 @@ function getAmount() {
                         sessionStorage.setItem("currentVal", currentVal);
                         sessionStorage.setItem("logged_id", logged_id);
                         console.log("TESTE")
-                        var logged_hotel = (users[logged_id].hotel_cnpj)
+                        logged_hotel = (users[logged_id].hotel_cnpj)
+                        console.log(logged_hotel);
                         sessionStorage.setItem("logged_hotel", logged_hotel);
                     }
                     j += 1;
