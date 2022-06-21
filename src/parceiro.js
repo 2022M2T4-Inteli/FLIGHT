@@ -9,7 +9,7 @@ const hostname = '127.0.0.1';
 const DBPATH = 'dbHURB.db';
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("frontend"));
+app.use(express.static("fronthurb"));
 
 // Adicionar um parceiro com seu nome e montante total(que vai ser calculado automaticamente e não manualmente, e atualizado em tempo real)
 app.post('/createpartner', urlencodedParser, (req, res) => {
@@ -86,6 +86,34 @@ app.get('/get-ds', (req, res) => {
 	db.close(); // Fecha o banco
 });
 
+app.get('/get-intersec', (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+  var sql = 'SELECT distinct count(hotelCnpj),sum(montanteEscolhido),hotelCnpj FROM ANTECIPACAO  INNER JOIN HOTEL on HOTEL.cnpj = ANTECIPACAO.hotelCnpj GROUP BY hotelCnpj';
+	db.all(sql, [],  (err, rows ) => {
+		if (err) {
+		    throw err;
+		}
+		res.json(rows);
+	});
+	db.close(); // Fecha o banco
+});
+
+
+app.get('/get-hotels', (req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
+	var db = new sqlite3.Database(DBPATH); // Abre o banco
+  var sql = 'SELECT * FROM HOTEL';
+	db.all(sql, [],  (err, rows ) => {
+		if (err) {
+		    throw err;
+		}
+		res.json(rows);
+	});
+	db.close(); // Fecha o banco
+}); 
 
 app.get('/get-hotels', (req, res) => {
 	res.statusCode = 200;

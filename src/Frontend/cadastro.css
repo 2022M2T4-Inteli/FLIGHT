@@ -57,8 +57,9 @@ input:placeholder-shown {
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+  border-color: #3468FC;
     outline: none;
-    color: black;
+    color: #3468FC;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 9px #999;

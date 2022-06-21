@@ -6,7 +6,7 @@ var string;
 
 // Pega o status de antecipações
 function getAnticipationsNumber() {
-    $.get("http://127.0.0.1:3000/feedback", function(quantidade) {
+    $.get("http://127.0.0.1:3000/anticipations", function(quantidade) {
     var size = quantidade.length;
     if (size == 0) {
         string = "Nenhuma antecipação";
@@ -27,9 +27,18 @@ function getAnticipationsNumber() {
 
     })
     lucro += (total - lucroTotal)
+    console.log(lucro)
     $("#profits").html("R$ " + lucro.toFixed(2))
     }
-)}
+)    
+    getTable()
+}
+
+function getTable() {
+    $.get("http://127.0.0.1:3000/get-intersec", function(intersec) {
+        console.log(intersec)
+    })
+}
 
 $('#valor').keyup(function() {
     console.log("AA")
