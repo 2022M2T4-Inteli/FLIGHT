@@ -22,69 +22,53 @@ Para hotéis que se enquadram na regra de negócios padrão (pagamento no D+30 p
 &emsp;&emsp;&emsp;Na antecipação D15, o desconto é de 6% do total devido ao hoteleiro parceiro.<br>
 Nossa solução é a criação de uma plataforma web para os hoteleiros parceiros do Hurb para facilitação do pedido de antecipação após o faturamento do check-out.
 <br><br>
-<p align="center">
-<img src="https://mir-s3-cdn-cf.behance.net/projects/404/325653103583589.Y3JvcCwyODc2LDIyNTAsMTEzLDA.png" alt="NOME DO JOGO" border="0"><br>
-  Web Solution by <a href="http://www.nyphotographic.com/">Sistema de antecipação</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
-</p>
 
+## 🛠 Estrutura de pastas<br>
+**|-->** documentos<br>
+&emsp;**| -->** outros<br>
+&emsp;&emsp;| T4_G5_Web_application_document.docx<br>
+&emsp;&emsp;| T4_G5_Web_application_document.pdf<br>
+**|-->** imagens<br>
+**|-->** src<br>
+&emsp;**|-->** Backend<br>
+&emsp;**|-->** Frontend<br>
+&emsp;|--> readme.md<br>
+&emsp;|---> license.txt<br>
 
-## 🛠 Estrutura de pastas
-Documentos<br>
-Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
-  &emsp;&emsp;|-->antigos<br>
-  &emsp;&emsp;|-->Outros Documentos<br>
-  WAD - Documento Aplicação Web.pdf<br>
+Dentre os arquivos presentes na raiz do projeto, definem-se:
 
-Imagens<br>
-Aqui você encontrará todas as imagens do projeto, juntamente com os ícones utilizados<br>
-  &emsp;&emsp;|-->Ícone Utilizados<br><br>
-src<br>
-Aqui você encontrará o código fonte do projeto.<br>
-  &emsp;&emsp;|-->BACK-END<br>
-  &emsp;&emsp;|-->FRON-END<br>
-Readme.md<br>
-Licença.txt <br>
+**readme.md**: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-## 🛠 Instalação
+**documentos**: aqui estarão todos os documentos do projeto. Há também uma pasta denominada outros onde estão presentes aqueles documentos complementares ao web application document.
 
-Caso quiser  atualizar no nosso site vai ser necesário fazer a configuração do ambiente. Rode no terminal do VS-code os seguintes comandos:
-```sh
-npm start
-npm install sqlite3
-$ npm install express
-$ npm install body-parser
-```
-Esses comandos vão colocar na sua maquina todas as bibliotecas que fazem o site rodar. Para colocar em contexto o SQLite foi usado para o banco de dados. 
+**imagens**: imagens relacionadas ao projeto como um todo (por exemplo imagens do sistema, do grupo, logotipos e afins).
 
-## 📈 Exemplo de uso
-
-Nosso projeto vai ser utilizados por hoteleiros que se encaixam na regra de negocío D+30 para conseguirem antecipações das reservas feitas pelo site da HURB. As antecipações são automatizadas para
+**src**: nesta pasta encontra-se todo o código fonte do sistema (existem duas subpastas backend e frontend que contêm, respectivamente, o código do servidor e o código da página web).
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+Aqui encontram-se todas as instruções necessárias para a instalação de todos os programas, bibliotecas e ferramentas imprescindíveis para a configuração do ambiente de desenvolvimento.<br>
 
-Para abrir este projeto você necessita das seguintes ferramentas:
+Baixar e instalar o **node.js**: https://nodejs.org/pt-br/ (versão 16.15.1 LTS)<br>
+Clone o repositório em questão.<br>
+No modo administrador, abra o "prompt de comando" ou o "terminal" e, após, abra a pasta "**src/backend**" no diretório raiz do repositório clonado e digite o segundo comando:<br>
+  
+###### npm install
 
--<a href="https://nodejs.org/en/">Node.JS</a>
--<a href="https://www.sqlite.org/download.html">SQLite</a>
--<a href="https://sqlitebrowser.org/dl/">DB browser</a>
+  <br>Isso instalará todas as dependências definidas no arquivo package.json que são necessárias para rodar o projeto. Agora o projeto já está pronto para ser modificado. Caso ainda deseje iniciar a aplicação, digite o comando abaixo no terminal:
 
-Para fazer alterações no back necesita instalar esse:
-```sh
-npm install sqlite3
-$ npm install express
-$ npm install body-parser
-```
+npm start
+
+Pronto. O servidor está online.
 
 ## 🗃 Histórico de lançamentos
 
 A cada atualização os detalhes devem ser lançados aqui.
 
 * 0.0.1 - 22/04/2022
-    * MUDANÇA: Adição de Template;<br>
+    * Adição de Template;<br>
 * 0.0.2 - 03/05/2022
-    * MUDANÇA: Criação e desenvolvimento do WAD;<br>
+    * Criação e desenvolvimento do WAD;<br>
 * 0.2.1 - 05/01/2022
     * Exclusão do modelo GDD e atualização do WAD;<br>
 * 0.2.1 - 05/01/2022
@@ -109,7 +93,9 @@ A cada atualização os detalhes devem ser lançados aqui.
  * 0.8.2 - 17/06/2022
     * Add dos testes de Funcionalidade (preliminares);<br>
  * 0.9.1 - 20/06/2022
-    * Organização das pastas documentos e update da estrutura de pastas do README.md<br> 
+    * Organização das pastas documentos e update da estrutura de pastas do README.md<br>
+ * **0.1.0 - 21/06/2022**
+    * **Update README.md completo e no modelo correto.**<br>   
 
 ## 📋 Licença/License
 
