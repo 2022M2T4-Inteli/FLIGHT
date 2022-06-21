@@ -53,11 +53,11 @@ Baixar e instalar o **node.js**: https://nodejs.org/pt-br/ (versão 16.15.1 LTS)
 Clone o repositório em questão.<br>
 No modo administrador, abra o "prompt de comando" ou o "terminal" e, após, abra a pasta "**src/backend**" no diretório raiz do repositório clonado e digite o segundo comando:<br>
   
-###### npm install
+```npm install```
 
   <br>Isso instalará todas as dependências definidas no arquivo package.json que são necessárias para rodar o projeto. Agora o projeto já está pronto para ser modificado. Caso ainda deseje iniciar a aplicação, digite o comando abaixo no terminal:
 
-npm start
+```npm start```
 
 Pronto. O servidor está online.
 
