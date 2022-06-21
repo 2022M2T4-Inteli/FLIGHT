@@ -32,12 +32,7 @@ Nossa solução é a criação de uma plataforma web para os hoteleiros parceiro
 Documentos<br>
 Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
   &emsp;&emsp;|-->antigos<br>
-  Análise de Risco - Sist. Antecipação -HURB - Sheet1.pdf<br>
-  Arquitetura da Solução.pdf<br>
-  Modelo Conceitual de Banco de Dados v2.0.pdf<br>
-  Modelo Lógico de Banco de Dados v1.0.pdf<br>
-  Registro dos testes de Funcionalidades.pdf<br>
-  Style Guide - F.L.I.G.H.T..pdf<br>
+  &emsp;&emsp;|-->Outros Documentos<br>
   WAD - Documento Aplicação Web.pdf<br>
 
 Imagens<br>
@@ -106,7 +101,7 @@ A cada atualização os detalhes devem ser lançados aqui.
 * 0.7.0 - 15/06/2022
     * Atualização da API do Postman;<br>
 * 0.7.1 - 15/06/2022
-    *Representação da arquitetura da solução concluída no WAD;<br>
+    * Representação da arquitetura da solução concluída no WAD;<br>
  * 0.8.0 - 17/06/2022
     * Add das legendas das imagens no WAD;<br>
  * 0.8.1 - 17/06/2022
