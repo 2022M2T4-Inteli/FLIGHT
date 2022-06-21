@@ -106,7 +106,7 @@ A cada atualização os detalhes devem ser lançados aqui.
 * 0.7.0 - 15/06/2022
     * Atualização da API do Postman;<br>
 * 0.7.1 - 15/06/2022
-    *Representação da arquitetura da solução concluída no WAD;<br>
+    * Representação da arquitetura da solução concluída no WAD;<br>
  * 0.8.0 - 17/06/2022
     * Add das legendas das imagens no WAD;<br>
  * 0.8.1 - 17/06/2022
