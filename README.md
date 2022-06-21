@@ -32,12 +32,7 @@ Nossa solução é a criação de uma plataforma web para os hoteleiros parceiro
 Documentos<br>
 Aqui estará toda a documentação do projeto, contendo toda a contextualização do projeto<br>
   &emsp;&emsp;|-->antigos<br>
-  Análise de Risco - Sist. Antecipação -HURB - Sheet1.pdf<br>
-  Arquitetura da Solução.pdf<br>
-  Modelo Conceitual de Banco de Dados v2.0.pdf<br>
-  Modelo Lógico de Banco de Dados v1.0.pdf<br>
-  Registro dos testes de Funcionalidades.pdf<br>
-  Style Guide - F.L.I.G.H.T..pdf<br>
+  &emsp;&emsp;|-->Outros Documentos<br>
   WAD - Documento Aplicação Web.pdf<br>
 
 Imagens<br>
