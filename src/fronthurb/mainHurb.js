@@ -3,7 +3,8 @@ var i = 0;
 var lucro = 0;
 var lucroTotal = 0;
 var string;
-
+var anticipations
+var melhores = []
 // Pega o status de antecipações
 function getAnticipationsNumber() {
     $.get("http://127.0.0.1:3000/anticipations", function(quantidade) {
@@ -27,7 +28,6 @@ function getAnticipationsNumber() {
 
     })
     lucro += (total - lucroTotal)
-    console.log(lucro)
     $("#profits").html("R$ " + lucro.toFixed(2))
     }
 )    
@@ -36,10 +36,28 @@ function getAnticipationsNumber() {
 
 function getTable() {
     $.get("http://127.0.0.1:3000/get-intersec", function(intersec) {
-        console.log(intersec)
+        let i = 0;
+        while (i < intersec.length) {
+            melhores.push(intersec[i].hotelCnpj)
+            i += 1
+       }
+       console.log(melhores)
+    $.get("http://127.0.0.1:3000/anticipations", function (anticipacions) {
+        let p = 0;
+        while (p<anticipacions.length) {
+            
+            p += 1
+        }
     })
-}
-
-$('#valor').keyup(function() {
-    console.log("AA")
 })
+}
+//         while (p<3) {
+//             $.get("http://127.0.0.1:3000/get-anticipations-where", function (teste) {
+//                 data: {
+//                     hotelCnpj:a
+//                 }
+//             })
+//             }
+//             p += 1;
+//     })
+// }
