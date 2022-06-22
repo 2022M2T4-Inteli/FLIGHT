@@ -28,7 +28,6 @@ input[type="number"] {
 }
 .receive-in-text {
     margin-top: 6px;
-    font-weight: 600;
     font-size: 30px;
 }
 .input_1_data{
@@ -110,7 +109,6 @@ button{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: "Helvetica Neue";
     background-color: #f4f4f5;
   }
   

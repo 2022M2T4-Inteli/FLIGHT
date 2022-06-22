@@ -28,6 +28,7 @@ if (logged == false) {
 else {
         toastLoginSucces();
         postAcess();
+        logged = false
     }
     })
 }

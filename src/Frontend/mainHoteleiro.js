@@ -27,7 +27,6 @@ function saiba_mais(){
     window.location= 'file:///C:/Users/Inteli/Desktop/DESENVOLVIMENTO%20WEB/NOVAS%20TELAS%20-%20DAYLLAN/Apresenta%C3%A7%C3%A3o/2.%20HOTEL.HENRI%20-%20Menu.Hoteleiro/HTML/tela%20de%20cadastro.html'
 }
 var logged_cnpj
-var logged_cnpj
 function getAmount() {
     $.get("http://127.0.0.1:3000/get-access", function(access) {
     let accessed = (access[0].login_parceiro);
@@ -40,12 +39,12 @@ function getAmount() {
         while (i < users.length && found == false) {
             if (users[i].login == accessed) {
                 found = true;
+                console.log(users[i].hotel_cnpj)
                 logged_cnpj = (users[i].hotel_cnpj)
                 console.log(logged_cnpj);
                 $.get("http://127.0.0.1:3000/get-hotels", function(hotels) {
                 let j = 0;    
                 let match = false;
-                console.log(hotels);
                 while (j < hotels.length && match == false) {
                     console.log(logged_cnpj + " " + hotels[j].cnpj)
                     if (logged_cnpj == hotels[j].cnpj) {
