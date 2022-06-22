@@ -38,7 +38,6 @@ function getAnticipationsNumber() {
 
 function getTable() {
     $.get("http://127.0.0.1:3000/get-intersec", function(intersec) {
-        console.log(intersec)
         let i = 0;
         while (i < intersec.length) {
             melhores.push(intersec[i].hotelCnpj)
@@ -47,9 +46,7 @@ function getTable() {
     $.get("http://127.0.0.1:3000/get-hotels", function (hotels) {
 
         var top3Nomes = []
-        var top3Cnpjs = []        
-        console.log(melhores)
-        console.log(hotels)
+        var top3Cnpjs = []      
         // contador externo do looping (verifica a iteração)
         let i = 0
         // contador interno do looping (verifica o index)
@@ -90,18 +87,49 @@ function getTable() {
             }
             else if (anticipationslist[m].hotelCnpj == top3Cnpjs[2]) {
                 top3count += 1
-            }
+            }   
             m += 1
         }
         console.log(top1count + " " + top2count + " " + top3count)
         let y = 1
         while (y<3) {
-            $(`#hotel-count1`).html(top1count)
-            $(`#hotel-count2`).html(top2count)
-            $(`#hotel-count3`).html(top3count)
-            $(`#hotel-favrule1`).html()
+            $(`#hotel-favrule1`).html(`D+${intersec[0].regraNegocio}`)
+            $(`#hotel-favrule2`).html(`D+${intersec[1].regraNegocio}`)
+            $(`#hotel-favrule3`).html(`D+${intersec[2].regraNegocio}`)
             y += 1
         }
+        let n = 0
+        var teste = 0
+        let g = 0
+        var hotel1value = 0
+        var hotel2value = 0
+        var hotel3value = 0
+        while (n < anticipationslist.length) {
+            console.log(anticipationslist[n].hotelCnpj + " " + melhores[g])
+            if (anticipationslist[n].hotelCnpj == melhores[0]) {
+                hotel1value += anticipationslist[n].montanteEscolhido
+            }
+            else if (anticipationslist[n].hotelCnpj == melhores[1]) {
+                hotel2value += anticipationslist[n].montanteEscolhido
+            }
+            else if (anticipationslist[n].hotelCnpj == melhores[2]) {
+                hotel3value += anticipationslist[n].montanteEscolhido   
+            }
+            n += 1
+        }
+        $('#quantidade').click(function() {
+            $(`#hotel-count1`).html(`${top1count} antecipações`)
+            $(`#hotel-count2`).html(`${top2count} antecipações`)
+            $(`#hotel-count3`).html(`${top3count} antecipações`)
+            $("#case-view").html("Quantidade de Antecipações")
+         })
+         $('#valor').click(function() {
+            $(`#hotel-count1`).html(`R$${hotel1value}`)
+            $(`#hotel-count2`).html(`R$${hotel2value}`)
+            $(`#hotel-count3`).html(`R$${hotel3value}`)
+            $("#case-view").html("Valor antecipado")
+
+        });
         })
     })
 }

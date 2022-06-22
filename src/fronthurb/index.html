@@ -52,7 +52,7 @@
             #chartdiv {
               width:70%;
               height: 300px;
-              font-size: 30px;
+              font-size: 30px;  
             }
         </style>
         <script>
@@ -103,6 +103,7 @@
                 var series = chart.series.push(
                 am5percent.PieSeries.new(root, {
                     valueField: "value",
+                    absoluteValue:"absolute",
                     categoryField: "category",
                     endAngle: 270
                 })
@@ -116,6 +117,7 @@
                 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
                     series.data.setAll([{
                     category: "D+15 ",
+                    absoluteValue: 100,
                     value: d15
                     },{
                     category: "D+7 ",
@@ -141,7 +143,7 @@
                 <table border = "1">
                     <th>Ranking</th>
                     <th>Hotel</th>
-                    <th>Quantidade de Antecipações</th>
+                    <th id = "case-view">Quantidade de Antecipações</th>
                     <th>Regra Favorita</th>
                 <tr>
                     <td>1</td>
@@ -153,13 +155,13 @@
                     <td>2</td>
                     <td id = "hotel-name2"></td>
                     <td id = "hotel-count2"></td>
-                    <td id = "hotel-favrule1"></td>
+                    <td id = "hotel-favrule2"></td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td id = "hotel-name3"></td>
                     <td id = "hotel-count3"></td>
-                    <td id = "hotel-favrule1"></td>
+                    <td id = "hotel-favrule3"></td>
                 </tr>
             </table>
             </div>
