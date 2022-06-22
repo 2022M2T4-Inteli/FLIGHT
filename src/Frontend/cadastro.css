@@ -23,7 +23,7 @@
     font-size: 20px;
 }
 .inputs {
-    width: 648px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,11 +63,11 @@ input:placeholder-shown {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    width: 80%;
+    width: 180px;
   }
   #confirm {
     margin-left: 8px;
-    width: 22%;
+    width: 180px;
   }
 
   .button:hover {background-color: #8CAAFD; color:white}

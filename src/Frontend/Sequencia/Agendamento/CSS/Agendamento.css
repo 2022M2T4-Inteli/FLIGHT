@@ -142,8 +142,15 @@ label{
     margin-bottom: 40px;
 }
 @media only screen and (max-width: 768px){
-    /*For mobile phones */
-    .Agendamento-automático{
+    
+    .formas_alinhadas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    .auto-scheduling{
         color: black;
         margin-top: 10%;
         font-size: 40px;
@@ -171,7 +178,7 @@ label{
         margin-bottom: 4%;
     }
 
-    .input{
+    .inputs{
     text-align: center;
     border-radius: 20px;
     border: 1px solid #3468fc;

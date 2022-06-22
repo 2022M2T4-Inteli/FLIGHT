@@ -2,32 +2,10 @@ body{
     margin:0;
     font-family: 'Montserrat', sans-serif;
 }
-header{
-    background-color: #3468fA;
-    height: 89px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
+
 .container{
     display:flex;
     flex-direction: column;
-}
-.topBar{
-    background-color:#3468FC;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 89px; 
-}
-.left-arrow{
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 12.5px;
-}
-.logo{
-    height: 80px;
 }
 .title{
     align-self:center;
