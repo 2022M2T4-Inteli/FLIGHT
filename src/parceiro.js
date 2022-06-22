@@ -90,7 +90,7 @@ app.get('/get-intersec', (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
-  var sql = 'SELECT distinct count(hotelCnpj),sum(montanteEscolhido),hotelCnpj FROM ANTECIPACAO  INNER JOIN HOTEL on HOTEL.cnpj = ANTECIPACAO.hotelCnpj GROUP BY hotelCnpj ORDER BY count(hotelCnpj) DESC LIMIT 3';
+  var sql = 'SELECT distinct count(hotelCnpj),hotelCnpj,regraNegocio FROM ANTECIPACAO  INNER JOIN HOTEL on HOTEL.cnpj = ANTECIPACAO.hotelCnpj GROUP BY hotelCnpj ORDER BY count(hotelCnpj) DESC LIMIT 3'
 	db.all(sql, [],  (err, rows ) => {
 		if (err) {
 		    throw err;
@@ -99,7 +99,6 @@ app.get('/get-intersec', (req, res) => {
 	});
 	db.close(); // Fecha o banco
 });
-
 
 app.get('/get-hotels', (req, res) => {
 	res.statusCode = 200;
