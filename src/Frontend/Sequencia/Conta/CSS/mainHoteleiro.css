@@ -4,10 +4,8 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .menu {
-    left: 2%;
-    top: 3%;
-    height: 66px;
-    width: 66px;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
 }
 
