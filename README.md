@@ -6,7 +6,6 @@
 
 # Sistema de Antecipação de Receita de Hotéis Parceiros
 
-
 ## F.L.I.G.H.T.
 
 ## Integrantes: <a href="https://www.linkedin.com/in/dayllan-alho">Dayllan Alho</a>, <a href="">Henri Harari</a>, <a href="https://www.linkedin.com/in/jonas-viana-sales">Jonas Sales</a>, <a href="https://www.linkedin.com/in/jordan-andrade-352541240/">Jordan Andrade</a>, <a href="https://www.linkedin.com/in/luca-giberti-63a4ab231/">Luca Giberti</a>, <a href="https://www.linkedin.com/in/moises-caze">Moises Cazé</a>
@@ -47,19 +46,23 @@ Dentre os arquivos presentes na raiz do projeto, definem-se:
 
 ## 💻 Configuração para Desenvolvimento
 
-Aqui encontram-se todas as instruções necessárias para a instalação de todos os programas, bibliotecas e ferramentas imprescindíveis para a configuração do ambiente de desenvolvimento.<br>
+Aqui encontram-se todas as instruções necessárias para a instalação de todos os programas, bibliotecas e ferramentas imprescindíveis para a configuração do ambiente de desenvolvimento.
 
-Baixar e instalar o **node.js**: https://nodejs.org/pt-br/ (versão 16.15.1 LTS)<br>
-Clone o repositório em questão.<br>
-No modo administrador, abra o "prompt de comando" ou o "terminal" e, após, abra a pasta "**src/backend**" no diretório raiz do repositório clonado e digite o segundo comando:<br>
-  
-```npm install```
+1.  Baixar e instalar o node.js:  [https://nodejs.org/pt-br/](https://nodejs.org/pt-br/) (versão 16.15.1 LTS)
+2. Clone o repositório em questão.
+3.  No modo administrador, abra o "prompt de comando" ou o "terminal" e, após,  abra a pasta "src/backend" no diretório raiz do repositório clonado e digite o segundo comando:
 
-  <br>Isso instalará todas as dependências definidas no arquivo package.json que são necessárias para rodar o projeto. Agora o projeto já está pronto para ser modificado. Caso ainda deseje iniciar a aplicação, digite o comando abaixo no terminal:
+```sh
+npm install
+```
 
-```npm start```
+Isso instalará todas as dependências definidas no arquivo <b>package.json</b> que são necessárias para rodar o projeto. Agora o projeto já está pronto para ser modificado. Caso ainda deseje iniciar a aplicação, digite o comando abaixo no terminal:
 
-Pronto. O servidor está online.
+```sh
+npm start
+```
+5. Agora você pode acessar a aplicação através do link http://localhost:1234/
+6. O servidor está online.
 
 ## 🗃 Histórico de lançamentos
 
@@ -107,6 +110,4 @@ Aqui estão as referências usadas no projeto.
 
 1. <https://stackoverflow.com/>
 2. <https://www.w3schools.com/>
-3. <jquery-3.6.0.min.js>
 3. <https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js>
-4. <>
