@@ -4,9 +4,11 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .menu {
-height: 60px;
-width: 60px;
-cursor: pointer;
+    left: 2%;
+    top: 3%;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
 }
 
 .background {
