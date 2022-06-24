@@ -19,10 +19,10 @@ function getUsers() {
             logged = true;  
         }
     }
+    i += 1;    
 }
 if (logged == false) {
     alert("Login ou senha inválidos");
-    i += 1;    
 }
 else {
         toastLoginSucces();

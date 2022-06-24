@@ -1,5 +1,5 @@
 var currentVal
-var part
+var partn
 function openMenu() {
     window.location = 'Sequencia/MenuHoteleiro/HTML/menu.html'
 }
@@ -67,9 +67,8 @@ function getAmount() {
     })
     }
 function eyeMode() {
-    console.log(document.getElementById("eyeimg").src)
-    if(document.getElementById('eyeimg').src == 'http://127.0.0.1:5501/Frontend/Sequencia/Conta/HTML/olho_aberto2.png') {
-        document.getElementById('eyeimg').src = 'http://127.0.0.1:5501/Frontend/Sequencia/Conta/HTML/olho_fechado.png'
+    if(document.getElementById('eyeimg').src == 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png') {
+        document.getElementById('eyeimg').src = 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_fechado.png'
         let i = 0;
         let stringPart = String(part).length
         console.log(stringPart)
@@ -80,7 +79,7 @@ function eyeMode() {
         }
     }
     else {
-        document.getElementById('eyeimg').src = 'http://127.0.0.1:5501/Frontend/Sequencia/Conta/HTML/olho_aberto2.png'
+        document.getElementById('eyeimg').src = 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png'
         $('#teste2').html(`R$ ${currentVal}`)
     }
 }
