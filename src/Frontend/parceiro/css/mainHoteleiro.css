@@ -1,0 +1,214 @@
+body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+.menu {
+height: 60px;
+width: 60px;
+cursor: pointer;
+}
+.background {
+text-align: center;
+margin-top: 80px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+.valueLetter {
+font-size: 50px;
+left: 90px;
+font-weight: bold;
+bottom: 8%;
+}
+.box{
+display: flex;
+flex-direction: row;
+width: 100%;
+margin-top: 25px;
+justify-content:center;
+align-items: center;
+}
+.imgeye {
+display: flex;
+width: 30px;
+height: 40px;
+align-self: center;
+margin-right: 55px;
+}
+.eye {
+width: 100px;
+margin-right: 20px;
+cursor: pointer;
+}
+.eye:hover {
+width: 110px;
+margin-right: 18px;
+}
+.value {
+font-size: 40px;
+display: flex;
+width: 60%;
+height: 70px;
+border-radius: 50px;
+border: 12px solid #3468FC;
+border-color: #8CAAFD;
+justify-content: center;
+cursor: text;
+margin-right: 80px;
+text-align: center;
+align-items: center;
+}
+.background2 {
+background-color: #FFFFFF;
+top: 5%;
+display: flex;
+align-items: center;
+width: 70%;
+left: 15%;
+}
+.buttons {
+display: flex;
+flex-direction: column;
+margin-top: 100px;
+width: 100%;
+justify-items: center;
+align-items: center;
+}
+.valuenoeye {
+display: flex;
+width: 100%;
+justify-content:center;
+}
+.midButton1 {
+height: 80px;
+width: 40%;
+background-color: #8CAAFD;
+border-radius: 10vw;
+color: #FFFFFF;
+font-size: 30px;
+margin-bottom: 40px;
+}
+.footerButtons-group {
+display: flex;
+width: 100%;
+justify-content: center;
+}
+.footerButton {
+justify-content: space-evenly;
+width: 130px;
+height: 130px;
+border-radius: 30px;
+margin-right: 25px;
+border: 0;
+background-color: #8CAAFD;
+}
+.iconButton {
+height:90px;
+width: 100px;
+}
+@media only screen and (max-width: 375px) {
+/* For mobile phones: */
+  header {
+      width: 100%;
+  }
+  .menu {
+      height: 60px;
+      width: 60px;
+      cursor: pointer;
+  }
+  .logo{
+      height: 50px;
+  }
+  .valueLetter {
+      font-size: 36px;
+      left: 90px;
+      font-weight: bold;
+      bottom: 8%;
+  }
+  .value {
+      font-size: 40px;
+      display: flex;
+      width: 60%;
+      height: 70px;
+      border-radius: 50px;
+      border: 12px solid #3468FC;
+      border-color: #8CAAFD;
+      justify-content: center;
+      cursor: text;
+      margin-right: 80px;
+      text-align: center;
+      align-items: center;
+      cursor: copy;
+  }
+  .eye {
+      width: 100px;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+  .midButton1 {
+      width: 230px;
+      height: 80px;
+      font-size: 20px;
+      margin-top: 12%;
+      background-color: #8CAAFD;
+      border: 2px solid black;
+      border-radius: 50px;
+  }
+  .midButton2 {
+      width: 230px;
+      height: 80px;
+      font-size: 20px;
+      margin-top: 4%;
+      background-color: #8CAAFD;
+      border: 2px solid black;
+      border-radius: 50px;
+  }
+  .background3 {
+      background-color: #FFFFFF;
+      height: 30vh;
+      width: 100%;
+      margin:2%;
+  }
+  .footerButton {
+      height:70px;
+      max-height: 70px;
+      width: 200px;
+      max-width: 180px;
+      border-radius: 40px;
+      margin-top:2%;
+      margin-left: 2%;
+      margin-right: 2%;
+      border: 0;
+      background-color: #8CAAFD;
+  }
+  .iconButton {
+      height:50px;
+      width: 50px;
+  }
+  .valuenoeye {
+      display: flex;
+      width: 100%;
+      justify-content:center;
+      }
+  .imgeye {
+      display: flex;
+      width: 5px;
+      height: 50px;
+      align-self: center;
+      margin-right: 55px;
+      }
+  .box{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 25px;
+      align-items: center;
+  }
+  #teste2{
+      width: 500px;
+      height: 40px;
+      margin-left: 50px;
+      font-size:25px;
+  }
+}
