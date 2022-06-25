@@ -10,9 +10,10 @@ var anticipationslist
 function getAnticipationsNumber() {
     $.get("http://127.0.0.1:1234/anticipations", function(quantidade) {
         console.log(quantidade)
-    anticipationslist = quantidade;
-    console.log(quantidade)
-    console.log(anticipationslist)
+        anticipationslist = quantidade;
+        console.log(quantidade)
+        console.log(anticipationslist)
+
     if (anticipationslist.length == 0) {
         string = "Nenhuma antecipação";
         $("#anticipations-amount").html(string);    
@@ -23,12 +24,10 @@ function getAnticipationsNumber() {
     else if (anticipationslist.length > 1) {
         $("#anticipations-amount").html(`${anticipationslist.length}`);
     }
-    
     quantidade.map(item => {
         total += parseFloat(item.montanteEscolhido);
         lucroTotal += parseFloat(item.discountedAnticipation);
         $("#total-value").html("R$ " + total)
-
     })
     lucro += (total - lucroTotal)
     $("#profits").html("R$ " + lucro.toFixed(2))
@@ -131,6 +130,9 @@ function getTable() {
             
             if (top2count > 1) {
                 $(`#hotel-count2`).html(`${top2count} antecipações`)
+            }
+            else if (top2count == 1) {
+                $(`#hotel-count2`).html(`${top2count} antecipação`)
             }
             else if (top2count == 0) {
                 $('#hotel-count2').html('')
