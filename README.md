@@ -27,7 +27,7 @@ Nossa solução é a criação de uma plataforma web para os hoteleiros parceiro
 **|-->** documentos<br>
 &emsp;**| -->** outros<br>
 &emsp;&emsp;| T4_G4_V01_Web_application_document.docx<br>
-&emsp;&emsp;| T4_G5_V01_Web_application_document.pdf<br>
+&emsp;&emsp;| T4_G4_V01_Web_application_document.pdf<br>
 **|-->** imagens<br>
 **|-->** src<br>
 &emsp;**|--> Backend**<br>
