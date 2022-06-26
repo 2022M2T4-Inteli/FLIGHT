@@ -94,8 +94,10 @@ A cada atualização os detalhes devem ser lançados aqui.
     * Add dos testes de Funcionalidade (preliminares);<br>
  * 0.9.1 - 20/06/2022
     * Organização das pastas documentos e update da estrutura de pastas do README.md<br>
- * **0.1.0 - 21/06/2022**
-    * **Update README.md completo e no modelo correto.**<br>   
+ * 0.1.0 - 21/06/2022*
+    * Update README.md completo e no modelo correto.<br>
+ *  **0.1.1 - 24/06/2022**
+    * **Organização do GitHub e todos os entregáveis concluídos.**<br>
 
 ## 📋 Licença/License
 
@@ -107,6 +109,4 @@ Aqui estão as referências usadas no projeto.
 
 1. <https://stackoverflow.com/>
 2. <https://www.w3schools.com/>
-3. <jquery-3.6.0.min.js>
 3. <https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js>
-4. <>
